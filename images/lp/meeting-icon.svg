@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c2856;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="0" y="0" width="57" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1.11"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="STAGE-2">
+    <g id="AGENDA_wide">
+      <g id="EVENTS_wide">
+        <g id="SEDINTA">
+          <g id="sedinta_icon">
+            <circle class="cls-1" cx="28.23" cy="27.81" r="25"/>
+            <g id="g1008">
+              <g id="g1010">
+                <g id="g1012">
+                  <g id="g1018">
+                    <path id="path1020" class="cls-2" d="M38.66,30.46c0,1.43-1.16,2.59-2.59,2.59s-2.59-1.16-2.59-2.59,1.16-2.59,2.59-2.59,2.59,1.16,2.59,2.59Z"/>
+                  </g>
+                  <g id="g1022">
+                    <path id="path1024" class="cls-2" d="M22.99,30.46c0,1.43-1.16,2.59-2.59,2.59s-2.59-1.16-2.59-2.59,1.16-2.59,2.59-2.59,2.59,1.16,2.59,2.59Z"/>
+                  </g>
+                  <g id="g1026">
+                    <path id="path1028" class="cls-2" d="M30.3,33.57c0,1.15-.93,2.07-2.07,2.07s-2.07-.93-2.07-2.07.93-2.07,2.07-2.07,2.07.93,2.07,2.07Z"/>
+                  </g>
+                  <g id="g1030">
+                    <path id="path1032" class="cls-2" d="M30.41,15.53l-.11-.22h-4.15l-.11.22c-.57,1.14-1.73,1.86-3,1.86v4.44c0,3.21,2.11,6.05,5.19,6.97,3.08-.92,5.19-3.76,5.19-6.97v-4.44c-1.27,0-2.43-.72-3-1.86Z"/>
+                  </g>
+                  <g id="g1034">
+                    <path id="path1036" class="cls-2" d="M30.43,20.59l-2.93,2.93-1.47-1.47"/>
+                  </g>
+                  <g id="g1038">
+                    <path id="path1040" class="cls-2" d="M31.4,37.5c.11-2.48,2.16-4.45,4.66-4.45s4.67,2.09,4.67,4.67v2.59h-8.87"/>
+                  </g>
+                  <g id="g1042">
+                    <path id="path1044" class="cls-2" d="M25.06,37.5c-.11-2.48-2.16-4.45-4.66-4.45s-4.67,2.09-4.67,4.67v2.59h8.87"/>
+                  </g>
+                  <g id="g1046">
+                    <path id="path1048" class="cls-2" d="M28.23,35.64h0c-2.01,0-3.63,1.63-3.63,3.63v1.04h7.26v-1.04c0-2.01-1.63-3.63-3.63-3.63Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

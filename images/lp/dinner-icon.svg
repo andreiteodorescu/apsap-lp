@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #8357a2;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" x="0" y="0" width="57" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1.11"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="STAGE-2">
+    <g id="AGENDA_wide">
+      <g id="EVENTS_wide">
+        <circle class="cls-2" cx="28.23" cy="27.81" r="25"/>
+        <path id="path2072" class="cls-1" d="M18.97,25.5h18.52v-3.7h-18.52v3.7Z"/>
+        <path id="path2084" class="cls-1" d="M24.53,15.31h-3.7v1.85c0,1.02.83,1.85,1.85,1.85s1.85-.83,1.85-1.85v-1.85Z"/>
+        <path id="path2088" class="cls-1" d="M35.64,15.31h-3.7v1.85c0,1.02.83,1.85,1.85,1.85s1.85-.83,1.85-1.85v-1.85Z"/>
+        <path id="path2092" class="cls-1" d="M24.53,31.05c0-1.02-.83-1.85-1.85-1.85h-8.33v3.7h10.19v-1.85Z"/>
+        <path id="path2096" class="cls-1" d="M42.12,29.2h-8.33c-1.02,0-1.85.83-1.85,1.85v1.85h10.19v-3.7Z"/>
+        <path id="path2100" class="cls-1" d="M16.19,32.9l-1.85,7.41"/>
+        <path id="path2104" class="cls-1" d="M40.27,32.9l1.85,7.41"/>
+        <path id="path2108" class="cls-1" d="M22.67,32.9l1.85,7.41"/>
+        <path id="path2112" class="cls-1" d="M33.79,32.9l-1.85,7.41"/>
+        <path id="path2116" class="cls-1" d="M28.23,25.5v14.81"/>
+        <path id="path2120" class="cls-1" d="M24.53,40.31h7.41"/>
+        <path id="path2124" class="cls-1" d="M14.34,29.2l.93-3.7-.93-7.41"/>
+        <path id="path2128" class="cls-1" d="M42.12,29.2l-.93-3.7.93-7.41"/>
+        <path id="path2136" class="cls-1" d="M33.79,19.02v2.78"/>
+      </g>
+    </g>
+  </g>
+</svg>

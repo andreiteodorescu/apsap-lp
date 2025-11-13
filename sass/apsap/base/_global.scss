@@ -508,3 +508,17 @@ body {
 .stage-3-color {
   color: $orange;
 }
+
+.new-website-page {
+  .main {
+    background-position: center 1700px;
+  }
+}
+
+.logo-institutii {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

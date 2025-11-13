@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f9bb8;
+      }
+
+      .cls-2 {
+        fill: #f9be13;
+      }
+
+      .cls-3 {
+        fill: #79c3d4;
+      }
+
+      .cls-4 {
+        fill: #397a89;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="AGENDA_wide">
+      <g id="color_separator">
+        <rect class="cls-2" width="200" height="15"/>
+        <rect class="cls-4" x="200" width="200" height="15"/>
+        <rect class="cls-1" x="400" width="200" height="15"/>
+        <rect class="cls-3" x="600" width="200" height="15"/>
+      </g>
+      <g id="color_separator-2" data-name="color_separator">
+        <rect class="cls-2" x="800" width="200" height="15"/>
+        <rect class="cls-4" x="1000" width="200" height="15"/>
+        <rect class="cls-1" x="1200" width="200" height="15"/>
+        <rect class="cls-3" x="1400" width="200" height="15"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -5,30 +5,30 @@ const cardFullImageSlider = new Swiper("#card-full-image-slider", {
   centerInsufficientSlides: true,
   breakpoints: {
     320: {
-      centeredSlides: true
+      centeredSlides: true,
     },
     400: {
-      centeredSlides: false
+      centeredSlides: false,
     },
     1280: {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
-      }
-    }
+        pauseOnMouseEnter: true,
+      },
+    },
   },
 });
 
 // Initialization for the hero slider
 const heroSlider = new Swiper("#hero-slider", {
-  effect: 'fade',
+  effect: "fade",
   autoplay: {
     enabled: true,
     delay: 4000,
     pauseOnMouseEnter: true,
-    disableOnInteraction: false
-  }
+    disableOnInteraction: false,
+  },
 });
 
 // +++++++++++++ Courses timeline slider START ++++++++++++++ //
@@ -38,13 +38,12 @@ const coursesSlider = new Swiper("#courses-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  }
+  },
 });
 
-
 // Pe clickul asta o sa faci tu ajax-ul
-$('#courses-slider .swiper-slide').on("click", function() {
-  $(this).addClass('current-active').siblings().removeClass('current-active');
+$("#courses-slider .swiper-slide").on("click", function () {
+  $(this).addClass("current-active").siblings().removeClass("current-active");
 });
 // +++++++++++++ Courses timeline slider END ++++++++++++++ //
 
@@ -54,7 +53,7 @@ const carsOverflowSlider2 = new Swiper("#card-overflow-slider", {
   centerInsufficientSlides: true,
   breakpoints: {
     320: {
-      enabled: false
+      enabled: false,
     },
     1200: {
       enabled: true,
@@ -62,8 +61,8 @@ const carsOverflowSlider2 = new Swiper("#card-overflow-slider", {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
-      }
+        pauseOnMouseEnter: true,
+      },
     },
   },
 });
@@ -72,12 +71,13 @@ const carsOverflowSlider2 = new Swiper("#card-overflow-slider", {
 const simpleLectoriSlider = new Swiper(".js-swiper-medallion", {
   loop: true,
   a11y: {
-    containerMessage: 'Lectorii APSAP',
-    containerRoleDescriptionMessage: 'Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau',
+    containerMessage: "Lectorii APSAP",
+    containerRoleDescriptionMessage:
+      "Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau",
   },
   breakpoints: {
     320: {
-      enabled: false
+      enabled: false,
     },
     1200: {
       enabled: true,
@@ -86,11 +86,12 @@ const simpleLectoriSlider = new Swiper(".js-swiper-medallion", {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu lectorii APSAP',
-        containerRoleDescriptionMessage: 'Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau',
+        containerMessage: "Carusel cu lectorii APSAP",
+        containerRoleDescriptionMessage:
+          "Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau",
       },
     },
     1374: {
@@ -100,11 +101,12 @@ const simpleLectoriSlider = new Swiper(".js-swiper-medallion", {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu lectorii APSAP',
-        containerRoleDescriptionMessage: 'Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau',
+        containerMessage: "Carusel cu lectorii APSAP",
+        containerRoleDescriptionMessage:
+          "Lectorii experimentați de la APSAP sunt specialiști în domeniile pe care le predau",
       },
     },
   },
@@ -112,14 +114,14 @@ const simpleLectoriSlider = new Swiper(".js-swiper-medallion", {
 
 // Initialization for the team slider with fisheye
 const medallionFisheyeSlider = new Swiper(".js-medallion-fisheye", {
-  slideActiveClass: 'medallion-zoom',
+  slideActiveClass: "medallion-zoom",
   a11y: {
-    containerMessage: 'Echipa APSAP',
-    containerRoleDescriptionMessage: 'Echipa centrului de formare APSAP',
+    containerMessage: "Echipa APSAP",
+    containerRoleDescriptionMessage: "Echipa centrului de formare APSAP",
   },
   breakpoints: {
     320: {
-      enabled: false
+      enabled: false,
     },
     1200: {
       enabled: true,
@@ -132,11 +134,11 @@ const medallionFisheyeSlider = new Swiper(".js-medallion-fisheye", {
       autoplay: {
         enabled: true,
         delay: 4000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu echipa APSAP',
-        containerRoleDescriptionMessage: 'Echipa centrului de formare APSAP',
+        containerMessage: "Carusel cu echipa APSAP",
+        containerRoleDescriptionMessage: "Echipa centrului de formare APSAP",
       },
     },
     1374: {
@@ -150,20 +152,20 @@ const medallionFisheyeSlider = new Swiper(".js-medallion-fisheye", {
       autoplay: {
         enabled: true,
         delay: 4000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu echipa APSAP',
-        containerRoleDescriptionMessage: 'Echipa centrului de formare APSAP',
+        containerMessage: "Carusel cu echipa APSAP",
+        containerRoleDescriptionMessage: "Echipa centrului de formare APSAP",
       },
     },
   },
 });
 
 // Add min height on the fisheye wrapper so that it doesn't move the page when it zooms
-setTimeout(function() {
-  const jsMedallionFisheye = $('.js-medallion-fisheye').outerHeight();
-  $('.js-medallion-fisheye').css('min-height', jsMedallionFisheye);
+setTimeout(function () {
+  const jsMedallionFisheye = $(".js-medallion-fisheye").outerHeight();
+  $(".js-medallion-fisheye").css("min-height", jsMedallionFisheye);
 }, 1000);
 
 // Initialization for the documents/certifications slider
@@ -171,12 +173,13 @@ const certificationsSlider = new Swiper(".js-swiper-certification", {
   rewind: true,
   centerInsufficientSlides: true,
   a11y: {
-    containerMessage: 'Autorizatii si certificate APSAP',
-    containerRoleDescriptionMessage: 'Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării',
+    containerMessage: "Autorizatii si certificate APSAP",
+    containerRoleDescriptionMessage:
+      "Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării",
   },
   breakpoints: {
     320: {
-      enabled: false
+      enabled: false,
     },
     1200: {
       enabled: true,
@@ -185,11 +188,12 @@ const certificationsSlider = new Swiper(".js-swiper-certification", {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu autorizatii si certificate APSAP',
-        containerRoleDescriptionMessage: 'Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării',
+        containerMessage: "Carusel cu autorizatii si certificate APSAP",
+        containerRoleDescriptionMessage:
+          "Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării",
       },
     },
     1374: {
@@ -199,31 +203,32 @@ const certificationsSlider = new Swiper(".js-swiper-certification", {
       autoplay: {
         enabled: true,
         delay: 3000,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       },
       a11y: {
-        containerMessage: 'Carusel cu autorizatii si certificate APSAP',
-        containerRoleDescriptionMessage: 'Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării',
+        containerMessage: "Carusel cu autorizatii si certificate APSAP",
+        containerRoleDescriptionMessage:
+          "Centrul de Formare APSAP este furnizor acreditat de formare profesională înregistrat în Registrul Național al Furnizorilor de Formare Profesionala a Adulților a Municipiului București iar certificatele de absolvire sunt emise de Comisia de Autorizare a Furnizorilor de Formare Profesională a Adulţilor sub egida Ministerului Muncii și Protecției Sociale și a Ministerului Educației și Cercetării",
       },
     },
   },
 });
 
 // Hotels thumbnail sliders
-const thumbsBigSlider = document.querySelectorAll('.js-thumbs-big');
-const thumbsSmallSlider = document.querySelectorAll('.js-thumbs-small');
+const thumbsBigSlider = document.querySelectorAll(".js-thumbs-big");
+const thumbsSmallSlider = document.querySelectorAll(".js-thumbs-small");
 
 for (let i = 0; i < thumbsBigSlider.length; i++) {
-  thumbsBigSlider[i].classList.add('js-thumbs-big-' + i);
-  thumbsSmallSlider[i].classList.add('js-thumbs-small-' + i);
+  thumbsBigSlider[i].classList.add("js-thumbs-big-" + i);
+  thumbsSmallSlider[i].classList.add("js-thumbs-small-" + i);
 
-  const hotelThumbs = new Swiper('.js-thumbs-small-' + i , {
+  const hotelThumbs = new Swiper(".js-thumbs-small-" + i, {
     //direction: "vertical",
     spaceBetween: 5,
     slidesPerView: 4,
     freeMode: true,
     keyboard: {
-      enabled: true
+      enabled: true,
     },
     watchSlidesProgress: true,
     breakpoints: {
@@ -233,13 +238,13 @@ for (let i = 0; i < thumbsBigSlider.length; i++) {
       600: {
         direction: "vertical",
       },
-    }
+    },
   });
 
-  const hotelThumbsBig = new Swiper('.js-thumbs-big-' + i, {
+  const hotelThumbsBig = new Swiper(".js-thumbs-big-" + i, {
     spaceBetween: 10,
     keyboard: {
-      enabled: true
+      enabled: true,
     },
     thumbs: {
       swiper: hotelThumbs,
@@ -247,8 +252,28 @@ for (let i = 0; i < thumbsBigSlider.length; i++) {
   });
 }
 
+/* ---------- NEW ------------ */
+const formatoriOverflowSlider = new Swiper("#formatoriOverflowSlider", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+  },
+});
 
-
-
-
-
+const eventAgendaSlider = new Swiper("#eventAgendaSlider", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+  },
+  scrollbar: {
+    el: ".agenda-scrollbar",
+    draggable: true,
+    dragSize: 100,
+  },
+});

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 88.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9be13;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #333232;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="AGENDA_wide">
+      <g id="AGENDA_EVENIMENT_wide" data-name="AGENDA EVENIMENT_wide">
+        <g id="AGENDA_icon">
+          <circle class="cls-1" cx="33.5" cy="65.63" r="22.5"/>
+          <g id="Notebook">
+            <line class="cls-2" x1="23.03" y1="1" x2="23.03" y2="12.02"/>
+            <path class="cls-2" d="M34.05,6.51c6.08,0,11.02,4.93,11.02,11.02v37.46c0,6.08-4.93,11.02-11.02,11.02H12.02c-6.08,0-11.02-4.93-11.02-11.02V17.53c0-6.08,4.93-11.02,11.02-11.02"/>
+            <path class="cls-2" d="M60.49,66c-3.53-3.53-5.51-8.31-5.51-13.3V16.97c0-3.04,2.47-5.51,5.51-5.51s5.51,2.47,5.51,5.51v35.73c0,4.99-1.98,9.77-5.51,13.3Z"/>
+            <line class="cls-2" x1="66" y1="27.99" x2="54.98" y2="27.99"/>
+            <line class="cls-2" x1="12.02" y1="27.99" x2="34.05" y2="27.99"/>
+            <line class="cls-2" x1="12.02" y1="39.01" x2="34.05" y2="39.01"/>
+            <line class="cls-2" x1="12.02" y1="50.03" x2="34.05" y2="50.03"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

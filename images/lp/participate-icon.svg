@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f9bb8;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="0" y="0" width="57" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1.11"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="STAGE-2">
+    <g id="AGENDA_wide">
+      <g id="EVENTS_wide">
+        <g id="PANEL">
+          <g id="panel_icon">
+            <circle class="cls-1" cx="28.56" cy="27.81" r="25"/>
+            <g id="g1440">
+              <g id="g1442">
+                <g id="g1444">
+                  <g id="g1450">
+                    <path id="path1452" class="cls-2" d="M25.46,18.42c0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11,1.39-3.11,3.11-3.11,3.11,1.39,3.11,3.11Z"/>
+                  </g>
+                  <g id="g1454">
+                    <path id="path1456" class="cls-2" d="M22.34,40.31v-7.46"/>
+                  </g>
+                  <g id="g1458">
+                    <path id="path1460" class="cls-2" d="M19.22,25.44v14.87h6.25v-15.62h6.26v-3.16h-13.07c-1.43,0-2.59,1.16-2.59,2.59v7.26h3.16"/>
+                  </g>
+                  <g id="g1462">
+                    <path id="path1464" class="cls-2" d="M31.73,23.16h3.89"/>
+                  </g>
+                  <g id="g1466">
+                    <path id="path1468" class="cls-2" d="M28.61,24.69v6.18h12.45v-15.57h-12.45v6.22"/>
+                  </g>
+                  <g id="g1470">
+                    <path id="path1472" class="cls-2" d="M38.62,40.31l-1.45-9.43"/>
+                  </g>
+                  <g id="g1474">
+                    <path id="path1476" class="cls-2" d="M31.05,40.31l1.45-9.43"/>
+                  </g>
+                  <g id="g1478">
+                    <path id="path1480" class="cls-2" d="M37.95,35.93h-6.22"/>
+                  </g>
+                  <g id="g1482">
+                    <path id="path1484" class="cls-2" d="M28.61,40.31h12.45"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

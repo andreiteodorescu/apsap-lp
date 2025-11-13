@@ -1,0 +1,204 @@
+section:has(.agenda-info-slider) {
+  overflow-x: clip;
+
+  .complex-title {
+    @media (min-width: 1600px) {
+      margin-left: calc((100vw - 1600px) / 2);
+    }
+
+    @media (max-width: 1599px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.agenda-info-slider {
+  overflow: visible;
+
+  @media (min-width: 1600px) {
+    margin-left: calc((100vw - 1600px) / 2);
+  }
+
+  @media (max-width: 1599px) {
+    margin-left: 30px;
+  }
+
+  .swiper-slide {
+    width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swiper-wrapper {
+    padding-right: 30px;
+  }
+}
+
+// Scrollbar pentru agenda slider
+.agenda-scrollbar {
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin-top: 20px;
+  position: relative;
+
+  @media (min-width: 1600px) {
+    margin-left: calc((100vw - 1600px) / 2);
+    margin-right: calc((100vw - 1600px) / 2);
+  }
+
+  @media (max-width: 1599px) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .swiper-scrollbar-drag {
+    height: 100%;
+    background-color: $new-blue;
+    border-radius: 2px;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+.card-agenda-date {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 5px;
+
+  &-text {
+    font-size: 21px;
+    color: $grey-dark-2;
+    font-family: $font-family-bold;
+  }
+}
+
+.card-agenda {
+  width: 220px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grey-extralight;
+  border-radius: 13px;
+
+  &-content {
+    padding: 15px 10px;
+    position: relative;
+
+    &-list {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &-date {
+      margin-bottom: 5px;
+      line-height: 1.2;
+
+      &-day {
+        font-size: 11px;
+        font-family: $font-family-medium;
+      }
+
+      &-hours {
+        font-size: 16px;
+        font-family: $font-family-bold;
+      }
+    }
+
+    &-text {
+      font-size: 13px;
+      font-family: $font-family-medium;
+      line-height: 1.2;
+
+      strong {
+        font-weight: 400;
+        font-family: $font-family-bold;
+      }
+    }
+
+    &-tag {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: $font-family-medium;
+      padding: 3px 10px 2px;
+      color: #fff;
+    }
+
+    &-number {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-family-bold;
+      font-size: 11px;
+      background-color: $new-blue;
+      color: #fff;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 10px;
+      top: -15px;
+    }
+  }
+
+  &-type-1 {
+    .card-agenda-content {
+      background-color: rgba(213, 213, 212, 0.8);
+      padding-bottom: 40px;
+      flex: 1;
+    }
+
+    &-a {
+      .card-agenda-content-date {
+        color: $new-purple;
+      }
+
+      .card-agenda-content-tag {
+        background-color: $new-purple;
+      }
+    }
+
+    &-b {
+      .card-agenda-content-date {
+        color: $blue-menu;
+      }
+
+      .card-agenda-content-tag {
+        background-color: $blue-menu;
+      }
+    }
+
+    &-c {
+      .card-agenda-content-date {
+        color: $orange;
+      }
+
+      .card-agenda-content-tag {
+        background-color: $orange;
+      }
+    }
+  }
+
+  &-type-2 {
+    background-color: #fff;
+
+    .card-agenda-content-date {
+      color: $new-blue;
+    }
+
+    .card-info-bottom-half-tag {
+      background-color: $new-blue;
+    }
+  }
+}
