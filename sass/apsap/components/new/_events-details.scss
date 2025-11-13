@@ -1,0 +1,145 @@
+.events-details {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(xl) {
+    margin-top: 60px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+
+  &-description {
+    width: 48%;
+    max-height: 240px;
+    overflow: auto;
+    padding-right: 10px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding-left: 40px;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-bottom: 20px;
+      order: 0;
+    }
+  }
+
+  &-tagline {
+    font-size: 40px;
+    line-height: 1;
+    margin: 0;
+    font-family: "BebasNeue-Regular";
+    margin-bottom: auto;
+
+    span {
+      display: block;
+      font-family: "BebasNeue-Thin";
+    }
+  }
+
+  &-cta {
+    display: flex;
+    gap: 10px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 55%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+      @include media-breakpoint-down(xl) {
+        width: 50%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.points-panel {
+  height: 55px;
+  display: inline-flex;
+  justify-content: flex-end;
+  border-radius: 4px;
+  background-image: url(../images/lp/stetoscop.png);
+  background-size: 40px 40px;
+  background-color: $grey-light-2;
+  background-repeat: repeat-x;
+  background-position: 7px 8px;
+  flex: 1;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  container-type: inline-size;
+  container-name: points-panel;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background-color: $grey-light-2;
+    top: 32px;
+    left: 0;
+  }
+
+  &-inner {
+    background: linear-gradient(
+      to left,
+      $grey-light-2 75%,
+      rgba(#ccc, 0.3) 99%,
+      transparent 100%
+    );
+    height: 55px;
+    padding: 5px 20px 5px 85px;
+    border-radius: 4px;
+    font-family: $font-family-bold;
+    display: inline-flex;
+    align-items: center;
+    font-size: 21px;
+    gap: 10px;
+    line-height: 1;
+
+    @container points-panel (max-width: 320px) {
+      padding-left: 45px;
+    }
+
+    @container points-panel (max-width: 275px) {
+      padding-left: 20px;
+    }
+
+    span {
+      font-size: 45px;
+      font-family: $font-family-extrabold;
+    }
+  }
+}

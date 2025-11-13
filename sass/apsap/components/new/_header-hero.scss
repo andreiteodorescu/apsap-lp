@@ -1,0 +1,163 @@
+body {
+  background-image: url(../images/diamonds-bg.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: rem(2220px)) {
+    background-size: 100% rem(1000px);
+  }
+
+  @include media-breakpoint-down(xl) {
+    background-size: rem(1920px) rem(740px);
+  }
+}
+
+.header-lp {
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.logo-new {
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.hero-event {
+  display: flex;
+  min-height: 415px;
+  margin-top: -37px;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    min-height: 0;
+  }
+}
+
+.hero-left {
+  background-image: url(../images/lp/doctors.jpeg);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  @media (max-width: rem(1550px)) {
+    background-position: right 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+    order: 1;
+    background-position: left -50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @media (max-width: rem(700px)) {
+    background-position: left -10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-position: right 0;
+  }
+}
+
+.hero-right {
+  width: 50%;
+  background-image: url(../images/diamonds-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 1777px 900px;
+  background-color: #182c3a;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+
+  @include media-breakpoint-down(xl) {
+    padding: 20px 30px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    border-radius: 0;
+    order: 0;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    background-color: #182c3a;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    left: 40px;
+    bottom: -60px;
+
+    @include media-breakpoint-down(xl) {
+      width: 130px;
+      height: 40px;
+      bottom: -40px;
+      left: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.hero-main-title {
+  font-family: "BebasNeue-Regular";
+  font-size: 66px;
+  line-height: 1;
+  margin: 0;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 56px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 46px;
+  }
+}
+
+.hero-second-title {
+  font-family: "BebasNeue-Regular";
+  font-size: 66px;
+  line-height: 1;
+  margin-bottom: 5px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 56px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 46px;
+  }
+}
+
+.hero-text {
+  font-family: "RubrikEdgeNew-Medium";
+  font-size: 33px;
+  line-height: 1;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 23px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}

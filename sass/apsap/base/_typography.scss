@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "RubrikEdgeNew-Bold";
+  src: url("../fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-BoldItalic";
+  src: url("../fonts/rubrikedgenew-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Extrabold";
+  src: url("../fonts/rubrikedgenew-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Light";
+  src: url("../fonts/rubrikedgenew-light-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Medium";
+  src: url("../fonts/rubrikedgenew-medium-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Regular";
+  src: url("../fonts/rubrikedgenew-regular-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-RegularItalic";
+  src: url("../fonts/rubrikedgenew-regularitalic-webfont.woff2") format("woff2"),
+    url("../fonts/rubrikedgenew-regularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../fonts/bebasneue-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeue-Thin";
+  src: url("../fonts/bebasneue_book-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+b,
+strong {
+  font-weight: normal;
+  font-family: $font-family-bold;
+}
+
+.main-title {
+  font-family: $font-family-bebas-regular;
+  font-size: rem(150px);
+  line-height: 1;
+  margin-bottom: 0;
+  color: $blue-main;
+
+  &-medium {
+    font-size: rem(100px);
+  }
+}
+
+.second-title {
+  font-size: rem(36px);
+  font-family: $font-family-bold;
+  margin-bottom: 0;
+  color: $blue-main;
+  max-width: rem(1080px);
+
+  &-fluid {
+    max-width: none;
+  }
+
+  &-black {
+    color: inherit;
+  }
+
+  &-thin {
+    font-family: $font-family-light;
+  }
+
+  &-bolder {
+    font-family: $font-family-extrabold;
+  }
+
+  &-small {
+    font-size: rem(30px);
+  }
+
+  .st-new-row-thin {
+    display: block;
+    font-family: $font-family-base;
+    line-height: 1;
+  }
+}
+
+.subtitle-text {
+  color: $blue-main;
+  margin-bottom: 0;
+  max-width: rem(1080px);
+
+  &-fluid {
+    max-width: none;
+  }
+
+  &-black {
+    color: inherit;
+  }
+
+  span {
+    font-family: $font-family-bold;
+  }
+
+  &-medium {
+    font-size: rem(21px);
+  }
+}
+
+.text-center {
+  .second-title,
+  .subtitle-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.random-big-title {
+  font-family: $font-family-bold;
+  font-size: rem(36px);
+  margin-bottom: rem(50px);
+  line-height: 1;
+
+  &-zoom {
+    font-family: $font-family-bebas-regular;
+    font-size: rem(150px);
+  }
+
+  &-yellow {
+    color: $yellow;
+  }
+
+  @include media-breakpoint-down(md) {
+    &-zoom {
+      font-size: rem(100px);
+    }
+  }
+
+  @media (max-width: rem(480px)) {
+    font-size: rem(30px);
+
+    &-zoom {
+      font-size: rem(80px);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .main-title {
+    font-family: $font-family-bebas-regular;
+    font-size: rem(80px);
+    line-height: 1;
+    margin-bottom: 0;
+    color: $blue-main;
+
+    &-medium {
+      font-size: rem(50px);
+    }
+  }
+
+  .second-title {
+    font-size: rem(28px);
+
+    &-small {
+      font-size: rem(22px);
+    }
+  }
+
+  .subtitle-text {
+    font-size: rem(13px);
+  }
+}

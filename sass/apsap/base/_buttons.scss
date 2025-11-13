@@ -1,0 +1,191 @@
+.btns-align {
+  .btn {
+    margin: rem(5px) rem(7px);
+  }
+}
+
+.btn-pill {
+  border: none;
+  background-color: $grey-extralight-2;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: rem(12px);
+  padding-bottom: rem(10px);
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: rem(7px);
+  font-family: $font-family-base;
+  line-height: 1;
+  font-size: rem(18px);
+
+  span {
+    font-family: $font-family-bold;
+  }
+
+  &:active,
+  &:hover,
+  &:first-child:active,
+  &:focus-visible {
+    background-color: $grey-hover !important;
+    color: #fff !important;
+  }
+
+  &-radius {
+    border-radius: rem(4px);
+  }
+
+  &-shadow {
+    box-shadow: 0 rem(3px) rem(2px) rgba(0, 0, 0, 0.2);
+  }
+
+  &-long {
+    width: 32%;
+
+    @include media-breakpoint-down(xl) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 95%;
+    }
+  }
+
+  &-yellow {
+    background-color: $yellow;
+    color: $grey-dark-2;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $yellow-hover !important;
+      color: $grey-dark-2 !important;
+    }
+  }
+
+  &-blue {
+    background-color: $blue-violet;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $blue-bonus !important;
+      color: #fff !important;
+    }
+  }
+
+  &-small {
+    min-width: rem(220px);
+    font-size: rem(14px);
+    padding-top: rem(10px);
+    padding-bottom: rem(8px);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+    font-family: $font-family-bold;
+
+    span {
+      font-family: $font-family-base;
+    }
+  }
+
+  &-big-red {
+    width: 100%;
+    font-size: rem(25px);
+    font-family: $font-family-extrabold;
+    background-color: $red;
+    height: rem(55px);
+
+    &-shadow {
+      box-shadow: 0 rem(3px) rem(2px) rgba(0, 0, 0, 0.2);
+    }
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $red-hover !important;
+    }
+
+    @media (max-width: rem(1300px)) {
+      font-size: rem(20px);
+      height: rem(50px);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    span {
+      font-family: $font-family-base;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  background-color: $grey-extralight-2;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: rem(4px);
+  font-family: $font-family-base;
+  line-height: 1;
+  font-size: rem(18px);
+  text-decoration: none;
+  min-height: rem(55px);
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-family: $font-family-bold;
+  }
+
+  &:active,
+  &:hover,
+  &:first-child:active,
+  &:focus-visible {
+    background-color: $grey-hover !important;
+    color: #fff !important;
+  }
+
+  &-stage-1 {
+    background-color: $new-green;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $new-green-hover !important;
+    }
+  }
+
+  &-stage-2 {
+    background-color: $new-blue;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $new-blue-hover !important;
+    }
+  }
+
+  &-stage-3 {
+    background-color: $orange;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $orange-hover !important;
+    }
+  }
+}

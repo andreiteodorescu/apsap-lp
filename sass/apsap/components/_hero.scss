@@ -1,0 +1,69 @@
+.hero-contain {
+    position: relative;
+    height: rem(350px);
+}
+
+.hero-multiuse {
+    border-radius: rem(20px);
+    overflow: hidden;
+    height: 100%;
+    margin-top: rem(-15px);
+
+    &-image, &-video {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        //object-position: left top; // For Pul: If the images uploaded are not resized beforehand (i hope not) uncomment this line and see if they show up better.
+    }
+
+    &-search {
+        position: absolute;
+        bottom: rem(30px);
+        width: 100%;
+
+        .second-title {
+            color: #fff;
+            text-align: center;
+            margin-bottom: rem(15px);
+        }
+    }
+
+    .swiper {
+        height: 100%;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .hero-contain {
+        height: rem(300px);
+    }
+}
+
+@media (max-width: rem(899px)) {
+    .hero-contain {
+        height: rem(180px);
+    }
+
+    .hero-multiuse-search .search-trigger-mobile {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .search-general-active {
+        .hero-contain {
+            position: static;
+        }
+
+        .hero-multiuse-search {
+            position: static;
+            bottom: auto;
+        }
+    }
+
+    .hero-multiuse-search .second-title {
+        font-size: rem(28px);
+    }
+}

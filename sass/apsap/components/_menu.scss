@@ -1,0 +1,472 @@
+.header {
+    height: rem(95px);
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu-btn {
+    position: relative;
+    z-index: 1001;
+    text-transform: uppercase;
+    font-family: $font-family-medium;
+    text-decoration: none;
+    //font-size: rem(15px);
+    color: $blue-menu;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    top: rem(-7px);
+    transition: all .3s ease-in-out;
+
+    &-text {
+        position: relative;
+        top: rem(1px);
+        font-style: normal;
+    }
+
+    &-close {
+        visibility: hidden;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        position: absolute;
+
+        &::after, &::before {
+            content: "";
+            width: 40px;
+            height: 2px;
+            width: rem(40px);
+            height: rem(2px);
+            background: $grey-light;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+            transition-delay: .3s;
+        }
+
+        &::after {
+            transform: rotate(45deg) translate(-35px, 14px);
+            transform: rotate(45deg) translate(rem(-35px), rem(14px));
+        }
+
+        &::before {
+            transform: rotate(-45deg) translate(28px, 6px);
+            transform: rotate(-45deg) translate(rem(28px), rem(6px));
+            
+        }
+    }
+
+    &-group {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu-btn-icon {
+    width: rem(32px);
+    height: rem(32px);
+    fill: $blue-menu;
+}
+
+.menu-left .menu-btn-icon {
+    margin-right: rem(8px);
+}
+
+.menu-right {
+    .menu-btn-close, .menu-btn-close-effect {
+        right: 0;
+    }
+
+    .menu-btn-group {
+        flex-direction: row-reverse;
+        right: 0;
+    }
+
+    .menu-btn-icon {
+        margin-left: rem(8px);
+    }
+}
+
+.main-submenu {
+    background-image: url('../images/diamonds-bg.svg'),linear-gradient($blue-normal, $blue-medium);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+    display: block !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    border: 0;
+    overflow-y: auto;
+    padding: 0;
+
+    &.dropdown-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &-list {
+        padding-top: rem(155px);
+
+        .list-group-item {
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+            border-color: rgba(207, 207, 206, .2);
+
+            // First level
+            .main-submenu-list-link {
+                padding: 0;
+                color: $grey-light;
+                font-family: $font-family-medium;
+                font-size: rem(18px);
+                text-decoration: none;
+                display: inline-block;
+                transition: transform .2s ease-in-out;
+
+                &:active, &:hover, &:focus {
+                    background-color: transparent;
+                }
+
+                &:hover {
+                    transform: translateX(rem(2px));
+                }
+
+                &.main-submenu-list-dropdown-toggler:hover::after {
+                    transform: translateX(-2px);
+                    transform: translateX(rem(-2px));
+                }
+            }
+
+            &.has-submenu {
+                li:first-child {
+                    margin-top: rem(8px);
+                    border-top: rem(1px) solid rgba(207, 207, 206, .2);
+                }
+
+                li:last-child {
+                    padding-bottom: 0;
+                }
+
+                // First level that has submenu
+                > .main-submenu-list-link {
+                    display: block !important;
+                    position: relative;
+
+                    &::after {
+                        content: "-";
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        transition: transform .2s ease-in-out;
+                    }
+
+                    &.collapsed::after {
+                        content: "+";
+                    }
+                }
+            }
+        }
+
+        > .list-group-item:last-child {
+            border-bottom: rem(1px) solid rgba(207, 207, 206, .2);
+        }
+    }
+
+    &-second-level {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255, .1) 45%, rgba(255,255,255, .1) 50%, transparent);
+            position: absolute;
+            left: 0;
+            top: 8px;
+            top: rem(8px);
+        }
+
+        .list-group-item {
+            position: relative;
+            z-index: 1;
+
+            // Second level
+            .main-submenu-list-link {
+                position: relative;
+                padding-left: rem(15px);
+                color: $grey-medium;
+
+                &::before {
+                    content: ">";
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                    top: rem(4px);
+                    font-size: 12px;
+                    font-size: rem(12px);
+                }
+            }
+        }
+    }
+
+    .search-wrapper {
+        display: none;
+        padding-top: rem(80px);
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(200px);
+    height: rem(95px);
+    background-color: $blue-main;
+    filter: drop-shadow(0 rem(3px) rem(3px) rgba(0, 0, 0, 0.3));
+    z-index: 1001;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+    &-icon {
+        width: rem(104px);
+        height: rem(39px);
+        fill: #fff;
+    }
+}
+
+.nav-active {
+    overflow: hidden;
+
+    .header {
+        overflow: initial;
+    }
+
+    .menu {
+        color: #fff;
+
+        a, .menu-btn {
+            color: #fff;
+        }
+
+        .menu-btn {
+            top: rem(1px);
+
+            &:focus-visible {
+                box-shadow: none;
+            }
+        }
+
+        .menu-btn-icon {
+            fill: $yellow;
+        }
+
+        .logo {
+            background-color: transparent;
+            box-shadow: none;
+            width: rem(168px);
+            height: rem(80px);
+            //transform: translateY(-7px);
+    
+            &-icon {
+                width: rem(100px);
+                height: rem(35px);
+            }
+        }
+
+        &-btn-active {
+            .menu-btn-group {
+                visibility: hidden;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .menu-btn-close {
+                visibility: visible;
+                width: rem(30px);
+                height: rem(30px);
+    
+                &::after {
+                    transform: rotate(45deg) translate(6px, 14px);
+                    transform: rotate(45deg) translate(rem(6px), rem(14px));
+                    opacity: 1;
+                }
+    
+                &::before {
+                    transform: rotate(-45deg) translate(-14px, 6px);
+                    transform: rotate(-45deg) translate(rem(-14px), rem(6px));
+                    opacity: 1;
+                }
+            }            
+        }
+
+        
+    }
+}
+
+.menu-close-effect {
+    display: none;
+}
+
+.header-sticky {
+    position: fixed !important;
+    width: 100%;
+    z-index: 11;
+    overflow: initial;
+    top: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 48px;
+        height: rem(48px);
+        animation: stickyMenuBG .3s ease-out .1s forwards;
+    }
+
+    .logo {
+        width: rem(168px);
+        height: rem(80px);
+
+        &-icon {
+            width: rem(100px);
+            height: rem(35px);
+        }
+    }
+
+    body:not(.nav-active) & {
+        .menu-btn {
+            top: rem(-16px);
+        }
+    
+        .menu-btn-icon {
+            width: rem(24px);
+            height: rem(24px);
+            fill:#fff;
+        }
+    
+        .menu-btn-text {
+            color: #fff;
+            top: rem(2px);
+            font-size: rem(15px);
+        }
+    }
+}
+
+@media (max-width: rem(899px)) {
+    .main-submenu {
+        background-size: cover;
+    }
+}
+
+@media (max-width: rem(640px)) {
+    .menu-btn-text {
+        display: none;
+    }
+}
+
+@media (max-height: rem(800px)) {
+    .nav-active {
+        .header {
+            position: relative;
+    
+            &::after {
+                content: "";
+                width: 100%;
+                height: 80px;
+                height: rem(80px);
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                animation: activeMenuBG .3s ease-out .2s forwards;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .main-submenu .search-wrapper {
+        padding-top: rem(100px);
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .menu-btn-close {
+        width: rem(30px);
+        height: rem(30px);
+
+        &::after, &::before {
+            will-change: transform;
+        }
+    }
+}
+
+@media (min-width: rem(1200px)) {
+    .menu-btn-close {
+        overflow: initial;
+    }
+
+    .menu-btn-close-effect {
+        display: block;
+        visibility: hidden;
+        //overflow: hidden;
+        width: 0;
+        height: 0;
+        position: absolute;
+
+        &::after, &::before {
+            content: "";
+            width: 40px;
+            height: 2px;
+            width: rem(40px);
+            height: rem(2px);
+            background: $grey-light;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+            transition-delay: .3s;
+        }
+
+        &::after {
+            transform: rotate(45deg) translate(-35px, 14px);
+            transform: rotate(45deg) translate(rem(-35px), rem(14px));
+        }
+
+        &::before {
+            transform: rotate(-45deg) translate(28px, 6px);
+            transform: rotate(-45deg) translate(rem(28px), rem(6px));
+            
+        }
+    }
+
+    .nav-active .menu-btn-active .menu-btn-close-effect {
+        visibility: visible;
+        width: rem(30px);
+        height: rem(30px);
+
+        &::after {
+            animation: activeMenuXEffectAfter .3s ease-in-out .4s forwards;
+        }
+
+        &::before {
+            animation: activeMenuXEffectBefore .3s ease-in-out .4s forwards;
+        }
+    }
+}

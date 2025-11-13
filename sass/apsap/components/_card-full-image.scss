@@ -1,0 +1,83 @@
+.card-full-image {
+    font-size: rem(12px) !important;
+    color: #fff;
+    text-align: left;
+    height: rem(198px);
+    display: block;
+
+    @media (max-width: rem(480px)) {
+        height: rem(160px);
+    }
+
+    &-inner {
+        border-radius: rem(10px);
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        width: rem(388px);
+        height: 100%;
+
+        @media (max-width: rem(480px)) {
+            width: rem(340px);
+        }
+    }
+
+    &-asset {
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    &-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0,0,0, .6), rgba(0,0,0, .2) 50%, transparent);
+        width: 100%;
+        padding: rem(10px) rem(20px);
+
+        @media (max-width: rem(480px)) {
+            padding: rem(7px) rem(20px);
+        }
+    }
+
+    &-pretitle {
+        margin: 0;
+        line-height: 1;
+    }
+
+    &-title {
+        font-family: $font-family-bold;
+        font-size: rem(28px);
+        margin: 0;
+    }
+
+    &-small {
+        height: rem(160px);
+
+        .card-full-image-inner, .card-full-image-asset {
+            width: rem(340px);
+        }
+
+        .card-full-image-text {
+            padding: rem(7px) rem(20px);
+        }
+    }
+}
+
+.cards-full-image-small-slider {
+    margin-left: rem(5px);
+
+    .swiper-slide {
+        width: rem(340px);
+    }
+}
+
+.cards-full-image-large-slider {
+    margin-left: rem(5px);
+
+    .swiper-slide {
+        width: rem(388px);
+    }
+}
