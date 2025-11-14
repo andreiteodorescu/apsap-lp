@@ -13158,6 +13158,12 @@ body {
   background-color: #fff;
 }
 
+@media (min-width: 1200px) {
+  .section-limited {
+    max-width: 65%;
+  }
+}
+
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
   src: url("../fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"), url("../fonts/rubrikedgenew-bold-webfont.woff") format("woff");
@@ -13356,6 +13362,7 @@ strong {
   font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
   font-size: 1.125rem;
+  text-decoration: none;
 }
 .btn-pill span {
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
@@ -13399,6 +13406,14 @@ strong {
   background-color: #1d66af !important;
   color: #fff !important;
 }
+.btn-pill-green {
+  background-color: #5eb461;
+  color: #fff;
+}
+.btn-pill-green:active, .btn-pill-green:hover, .btn-pill-green:first-child:active, .btn-pill-green:focus-visible {
+  background-color: #75c078 !important;
+  color: #fff !important;
+}
 .btn-pill-small {
   min-width: 13.75rem;
   font-size: 0.875rem;
@@ -13429,6 +13444,9 @@ strong {
     font-size: 1.25rem;
     height: 3.125rem;
   }
+}
+.btn-pill-normalcase {
+  text-transform: none;
 }
 @media (max-width: 767.98px) {
   .btn-pill span {
@@ -13503,6 +13521,12 @@ strong {
     font-size: 1.25rem;
     height: 3.125rem;
   }
+}
+
+.btn-whatsapp-icon {
+  position: relative;
+  margin-right: 5px;
+  top: -2px;
 }
 
 .form-control {
@@ -20679,6 +20703,17 @@ section:has(.formatori-info-slider) {
   position: relative;
   margin-bottom: 8px;
 }
+.card-formator-image-title {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  z-index: 2;
+  color: #fff;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  background-color: #203d74;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
 .card-formator-image::after {
   content: "";
   position: absolute;
@@ -20755,6 +20790,10 @@ section:has(.formatori-info-slider) {
   .complex-title-text span {
     font-size: 18px;
   }
+}
+
+.facilitators-info-slider .swiper-slide {
+  width: 230px;
 }
 
 section:has(.agenda-info-slider) {
@@ -21686,10 +21725,90 @@ section:has(.photo-gallery-slider) {
 .info-module {
   margin-top: 60px;
 }
-@media (min-width: 1200px) {
-  .info-module-limited {
-    max-width: 65%;
+.info-module-1 {
+  display: flex;
+  column-gap: 45px;
+}
+@media (max-width: 767.98px) {
+  .info-module-1 {
+    flex-direction: column;
+    gap: 30px;
   }
+}
+.info-module-1-card {
+  width: 315px;
+}
+@media (max-width: 1199.98px) {
+  .info-module-1-card {
+    width: auto;
+    flex: 1;
+  }
+}
+.info-module-1-card-title {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 15px 0 13px;
+}
+.info-module-1-card-text {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+.info-module-1-card-text strong {
+  font-weight: 400;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.info-module-title {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.info-module-scrollable {
+  overflow: auto;
+  max-height: 500px;
+  padding-right: 10px;
+}
+.info-module-accordion .accordion-item {
+  border-left: none;
+  border-right: none;
+  border-color: #203d74;
+  border-width: 2px;
+  border-radius: 0;
+}
+.info-module-accordion .accordion-item:first-child {
+  border-top: none;
+}
+.info-module-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+.info-module-accordion .accordion-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  color: #203d74;
+}
+@media (max-width: 767.98px) {
+  .info-module-accordion .accordion-button {
+    font-size: 18px;
+  }
+}
+.info-module-accordion .accordion-button::after {
+  display: none;
+}
+.info-module-accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #333232;
+}
+.info-module-accordion .accordion-body {
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer {

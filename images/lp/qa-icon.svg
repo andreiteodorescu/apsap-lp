@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 80.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9be13;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #333232;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="PANEL">
+    <g id="FAQ_wide">
+      <g id="FAQ_icon">
+        <circle class="cls-1" cx="33.5" cy="22.5" r="22.5"/>
+        <g>
+          <g>
+            <g>
+              <g>
+                <line class="cls-2" x1="25.78" y1="61.09" x2="30.95" y2="66.32"/>
+                <ellipse class="cls-2" cx="22.8" cy="58.21" rx="8.09" ry="8.18"/>
+              </g>
+              <path class="cls-2" d="M22.84,37.2h0c-11.48,0-20.78,9.41-20.78,21.01h0c0,3.48.84,6.77,2.32,9.66l-3.38,8.55,9.86-1.04c3.39,2.42,7.52,3.84,11.98,3.84h0c11.48,0,20.78-9.41,20.78-21.01h0c0-11.6-9.3-21.01-20.78-21.01Z"/>
+            </g>
+            <g>
+              <path class="cls-2" d="M51.45,44.25l-6.45-16.97c-.12-.31-.55-.31-.68,0l-6.02,16.12"/>
+              <line class="cls-2" x1="50.28" y1="41.49" x2="39.21" y2="41.49"/>
+            </g>
+          </g>
+          <path class="cls-2" d="M43.79,56.24c.13,0,.25,0,.38,0h0c4.46,0,8.59-1.42,11.98-3.84l9.86,1.04-3.11-7.88"/>
+          <path class="cls-2" d="M64.57,31.23c-1.85-9.69-10.28-17.01-20.41-17.01h0c-11.48,0-20.78,9.41-20.78,21.01h0c0,.63.03,1.25.08,1.86"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

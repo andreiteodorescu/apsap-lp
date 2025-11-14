@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #215e9e;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.47px;
+      }
+    </style>
+  </defs>
+  <g id="PANEL">
+    <g id="EXTRA_wide">
+      <g id="EXTRA_MODULE_wide" data-name="EXTRA MODULE_wide">
+        <g id="GRATUITATI">
+          <g>
+            <path class="cls-1" d="M50,100c27.57,0,50-22.43,50-50S77.57,0,50,0,0,22.43,0,50s22.43,50,50,50"/>
+            <path class="cls-2" d="M50,33.59l2.89,5.87,6.46.94-4.67,4.57,1.1,6.45-5.78-3.04-5.77,3.04,1.1-6.45-4.67-4.57,6.46-.94,2.89-5.87ZM46.39,62.81l-5.97,13.57-3.53-8.21-8.44,2.87,6.55-14.88M64.99,56.17l6.54,14.88-8.44-2.87-3.53,8.21-5.97-13.57M69.65,43.44c0,10.88-8.8,19.7-19.65,19.7s-19.65-8.82-19.65-19.7,8.8-19.81,19.65-19.81,19.65,8.93,19.65,19.81Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

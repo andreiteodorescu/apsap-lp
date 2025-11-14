@@ -18,6 +18,7 @@
   font-family: $font-family-base;
   line-height: 1;
   font-size: rem(18px);
+  text-decoration: none;
 
   span {
     font-family: $font-family-bold;
@@ -77,6 +78,19 @@
     }
   }
 
+  &-green {
+    background-color: $new-green;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $new-green-hover !important;
+      color: #fff !important;
+    }
+  }
+
   &-small {
     min-width: rem(220px);
     font-size: rem(14px);
@@ -113,6 +127,10 @@
       font-size: rem(20px);
       height: rem(50px);
     }
+  }
+
+  &-normalcase {
+    text-transform: none;
   }
 
   @include media-breakpoint-down(md) {
@@ -215,4 +233,10 @@
       }
     }
   }
+}
+
+.btn-whatsapp-icon {
+  position: relative;
+  margin-right: 5px;
+  top: -2px;
 }

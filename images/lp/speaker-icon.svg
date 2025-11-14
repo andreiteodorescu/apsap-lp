@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.22 80.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9be13;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #333232;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="PANEL">
+    <g id="INVITATI_SPECIALI_wide" data-name="INVITATI SPECIALI_wide">
+      <g id="invitati_speciali_icon">
+        <circle class="cls-1" cx="30.61" cy="22.5" r="22.5"/>
+        <path class="cls-2" d="M30.61,37.69v5.4M21.35,25.32c8.66.84,10.68-3.91,10.68-3.91,0,0,1.9,4.04,7.85,4.04M30.61,37.69h0c-5.12,0-9.26-4.15-9.26-9.26v-4.94c0-5.12,4.15-9.26,9.26-9.26s9.26,4.15,9.26,9.26v4.94c0,5.12-4.15,9.26-9.26,9.26ZM5.47,53.86v-10.36c0-2.73,1.08-5.34,3.01-7.27l3.55-3.55M49.19,32.67l3.55,3.55c1.93,1.93,3.01,4.55,3.01,7.27v10.36M39.45,53.86v-5.7M21.75,53.86v-5.7M37.81,37.78h-14.4c-5.41,0-9.8,4.39-9.8,9.81v6.27h34.01v-6.27c0-5.42-4.39-9.81-9.8-9.81ZM54.92,63.12H6.3l2.7,16.1h43.23l2.7-16.1ZM1,53.86h59.22v9.26H1v-9.26Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

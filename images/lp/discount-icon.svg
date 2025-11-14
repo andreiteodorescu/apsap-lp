@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 88.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9be13;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #333232;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="PANEL">
+    <circle class="cls-1" cx="33.5" cy="65.63" r="22.5"/>
+    <path class="cls-2" d="M25.43,34.82l16.14-16.14M40.22,33.46c2.24,0,4.06,1.82,4.06,4.06s-1.82,4.06-4.06,4.06-4.06-1.82-4.06-4.06,1.82-4.06,4.06-4.06ZM26.72,11.92c2.24,0,4.06,1.82,4.06,4.06s-1.82,4.06-4.06,4.06-4.06-1.82-4.06-4.06,1.82-4.06,4.06-4.06ZM53.81,37.56V1H13.19v36.56H1l32.5,28.44,32.5-28.44h-12.19Z"/>
+  </g>
+</svg>
