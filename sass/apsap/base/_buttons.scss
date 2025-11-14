@@ -122,7 +122,7 @@
   }
 }
 
-.btn {
+.btn-pill-new {
   border: none;
   background-color: $grey-extralight-2;
   color: #fff;
@@ -186,6 +186,33 @@
     &:first-child:active,
     &:focus-visible {
       background-color: $orange-hover !important;
+    }
+  }
+
+  &-pink {
+    background-color: $pink;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $pink-hover !important;
+    }
+
+    &-big {
+      width: 100%;
+      font-size: rem(25px);
+      font-family: $font-family-extrabold;
+      height: rem(55px);
+
+      &-shadow {
+        box-shadow: 0 rem(3px) rem(2px) rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: rem(1300px)) {
+        font-size: rem(20px);
+        height: rem(50px);
+      }
     }
   }
 }

@@ -1,27 +1,46 @@
 .certification {
-    max-width: rem(450px);
-    position: relative;
-    margin-top: rem(30px);
+  max-width: rem(450px);
+  position: relative;
+  margin-top: rem(18px);
+
+  figcaption {
+    background-color: $blue-main;
+    border-radius: rem(10px) 0 rem(10px) 0;
+    font-size: rem(24px);
+    font-family: $font-family-extrabold;
+    color: #fff;
+    padding: rem(7px) rem(30px) rem(5px);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: rem(-9px);
+    transform: rotate(-6deg) skew(-5deg);
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: rem(350px);
 
     figcaption {
-        background-color: $blue-main;
-        border-radius: rem(10px) 0 rem(10px) 0;
-        font-size: rem(24px);
-        font-family: $font-family-extrabold;
-        color: #fff;
-        padding: rem(7px) rem(30px) rem(5px);
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: rem(-9px);
-        transform: rotate(-6deg) skew(-5deg);
+      top: rem(-20px);
     }
+  }
 
-    @include media-breakpoint-down(md) {
-        max-width: rem(350px);
+  &-small {
+    max-width: rem(240px);
 
-        figcaption {
-            top: rem(-20px);
-        }
+    figcaption {
+      font-size: rem(12px);
+      border-radius: rem(5px) 0 rem(5px) 0;
+      padding: rem(5px) rem(20px) rem(3px);
+      top: rem(-7px);
+
+      @media (max-width: rem(1380px)) {
+        top: rem(2px);
+      }
     }
+  }
+}
+
+.certification-text {
+  margin-top: rem(15px);
 }

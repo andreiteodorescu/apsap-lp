@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="PHOTO_GALLERY_wide" data-name="PHOTO GALLERY_wide">
+      <g id="galerie_foto_icon" data-name="galerie foto_icon">
+        <g>
+          <g>
+            <g>
+              <line class="cls-1" x1="25.96" y1="66" x2="25.96" y2="59.58"/>
+              <line class="cls-1" x1="41.02" y1="59.58" x2="41.02" y2="66"/>
+            </g>
+            <circle class="cls-1" cx="33.49" cy="42.06" r="7.16"/>
+            <path class="cls-1" d="M49.34,66v-9.87c0-3.81-3.09-6.91-6.91-6.91h-17.88c-3.82,0-6.91,3.09-6.91,6.91v9.87h31.7Z"/>
+            <g>
+              <circle class="cls-1" cx="11.2" cy="47.47" r="5.55"/>
+              <path class="cls-1" d="M18.37,53.01H6.35c-2.95,0-5.35,2.39-5.35,5.35v7.64h16.64"/>
+            </g>
+            <g>
+              <circle class="cls-1" cx="55.8" cy="47.47" r="5.55"/>
+              <path class="cls-1" d="M48.63,53.01h12.02c2.95,0,5.35,2.39,5.35,5.35v7.64h-16.64"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect class="cls-1" x="5.86" y="1" width="23.26" height="26.21"/>
+              <rect class="cls-1" x="37.89" y="1" width="23.26" height="26.21"/>
+            </g>
+            <path class="cls-1" d="M37.89,14.83c14.16,2.21,23.26,2.25,23.26,2.25"/>
+            <path class="cls-1" d="M5.86,18.42s4.73-8.94,23.26-5.17"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

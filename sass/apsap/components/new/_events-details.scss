@@ -54,7 +54,7 @@
     font-size: 40px;
     line-height: 1;
     margin: 0;
-    font-family: "BebasNeue-Regular";
+    font-family: $font-family-bebas-regular;
     margin-bottom: auto;
 
     span {
@@ -71,7 +71,7 @@
       flex-direction: column;
     }
 
-    .btn {
+    .btn-pill-new {
       width: 55%;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
@@ -88,6 +88,7 @@
 
 .points-panel {
   height: 55px;
+  min-width: 275px;
   display: inline-flex;
   justify-content: flex-end;
   border-radius: 4px;

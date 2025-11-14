@@ -277,3 +277,13 @@ const eventAgendaSlider = new Swiper("#eventAgendaSlider", {
     dragSize: 100,
   },
 });
+
+const photoGallerySlider = new Swiper("#photoGallerySlider", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+  },
+});

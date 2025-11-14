@@ -1,69 +1,275 @@
 .hero-contain {
-    position: relative;
+  position: relative;
+  height: rem(350px);
+
+  @include media-breakpoint-down(xl) {
+    height: rem(300px);
+  }
+
+  @media (max-width: rem(899px)) {
+    height: rem(180px);
+  }
+
+  &-mobile-tall {
     height: rem(350px);
+  }
 }
 
 .hero-multiuse {
-    border-radius: rem(20px);
-    overflow: hidden;
+  border-radius: rem(20px);
+  overflow: hidden;
+  height: 100%;
+  margin-top: rem(-15px);
+  position: relative;
+
+  &.hero-has-hotel-image {
+    &:before {
+      //background: linear-gradient(to top, rgba(39, 50, 102, .8), rgba(39, 50, 102, .65) 50%, transparent);
+      background: linear-gradient(to top, rgba(39, 50, 102, .8), rgba(39, 50, 102, .45) 60%, transparent);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      z-index: 1;
+    }
+  }
+
+  &-image,
+  &-video {
+    display: block;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    margin-top: rem(-15px);
+    //object-position: left top; // For Pul: If the images uploaded are not resized beforehand (i hope not) uncomment this line and see if they show up better.
+  }
 
-    &-image, &-video {
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        //object-position: left top; // For Pul: If the images uploaded are not resized beforehand (i hope not) uncomment this line and see if they show up better.
+  &-search {
+    position: absolute;
+    bottom: rem(30px);
+    width: 100%;
+    z-index: 2;
+
+    .second-title {
+      color: #fff;
+      text-align: center;
+      margin-bottom: rem(15px);
+      //text-shadow: 1px 1px 5px #263266
     }
 
-    &-search {
-        position: absolute;
-        bottom: rem(30px);
-        width: 100%;
+  }
 
-        .second-title {
-            color: #fff;
-            text-align: center;
-            margin-bottom: rem(15px);
-        }
-    }
-
-    .swiper {
-        height: 100%;
-    }
-}
-
-@include media-breakpoint-down(xl) {
-    .hero-contain {
-        height: rem(300px);
-    }
+  .swiper {
+    height: 100%;
+  }
 }
 
 @media (max-width: rem(899px)) {
+  .hero-multiuse-search .search-trigger-mobile {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .search-general-active {
     .hero-contain {
-        height: rem(180px);
+      position: static;
     }
 
-    .hero-multiuse-search .search-trigger-mobile {
-        position: absolute;
-        right: 0;
-        left: 0;
-        z-index: 1;
+    .hero-multiuse-search {
+      position: static;
+      bottom: auto;
     }
+  }
 
-    .search-general-active {
-        .hero-contain {
-            position: static;
-        }
+  .hero-multiuse-search .second-title {
+    font-size: rem(28px);
+  }
+}
 
-        .hero-multiuse-search {
-            position: static;
-            bottom: auto;
-        }
+.hero-carousel-component {
+  margin-bottom: rem(15px);
+}
+
+.hero-carousel-course-left {
+  position: absolute;
+  left: rem(30px);
+  bottom: rem(10px);
+  max-width: rem(350px);
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    left: rem(20px);
+  }
+}
+
+.hero-carousel-course-link {
+  color: $yellow;
+  font-size: 18px;
+  text-decoration: none;
+
+  &-icon {
+    width: rem(35px);
+    height: rem(35px);
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 7px;
+
+    span {
+      font-family: $font-family-bold;
     }
+  }
 
-    .hero-multiuse-search .second-title {
-        font-size: rem(28px);
+  &:hover {
+    color: $yellow-hover;
+    text-decoration: underline;
+  }
+}
+
+.hero-carousel-course-right {
+  position: absolute;
+  right: rem(30px);
+  bottom: rem(20px);
+  max-width: rem(450px);
+  z-index: 1;
+  color: #fff;
+  font-family: $font-family-bebas-regular;
+  display: flex;
+  gap: rem(5px);
+
+  @include media-breakpoint-down(md) {
+    bottom: 10px;
+    right: rem(20px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    bottom: 55px;
+  }
+}
+
+.hero-carousel-course-number {
+  font-size: 140px;
+  line-height: 105px;
+  display: flex;
+  align-items: flex-end;
+  color: $yellow;
+  position: relative;
+  bottom: -24px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 80px;
+    line-height: 84px;
+  }
+}
+
+.hero-carousel-course-title {
+  font-size: 45px;
+  line-height: 1;
+  margin-bottom: 0;
+
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+  }
+
+  span {
+    color: $yellow;
+  }
+}
+
+.hero-discount-ribbons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.hero-course-discount-download {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    top: 0;
+    margin-top: -25px;
+    left: 0;
+    transform: none;
+    align-items: center;
+  }
+
+  .presentation-ribbon {
+    position: relative;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 200px;
     }
+  }
+}
+
+.hero-course-discount-download.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-pagination-bordered-bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  .swiper-pagination {
+    width: auto;
+    display: flex;
+    bottom: 20px;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet {
+    background: transparent;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    margin: 0 8px !important;
+    opacity: 1 !important;
+
+    &::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      position: absolute;
+      left: -3px;
+      top: -3px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
+}
+
+#course-hero-slider {
+  height: 100%;
+
+  @include media-breakpoint-down(lg) {
+    .swiper-pagination-bordered-bullets {
+      display: none;
+    }
+  }
 }

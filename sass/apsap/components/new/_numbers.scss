@@ -1,0 +1,50 @@
+.numbers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+
+  @include media-breakpoint-down(sm) {
+    row-gap: 40px;
+  }
+
+  &-item {
+    width: 230px;
+    padding: 0 5px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      width: auto;
+    }
+
+    &-title {
+      font-family: "BebasNeue-Regular";
+      font-size: 80px;
+      line-height: 1;
+
+      @include media-breakpoint-down(xl) {
+        font-size: 60px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 50px;
+      }
+
+      span {
+        font-family: "BebasNeue-Thin";
+      }
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 1.3;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+}

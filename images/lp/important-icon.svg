@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: #5eb461;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="IMPORTANT_CINA_wide" data-name="IMPORTANT+CINA_wide">
+      <g id="IMPORTANT">
+        <g id="important_icon">
+          <circle class="cls-3" cx="33.5" cy="73.5" r="22.5"/>
+          <g>
+            <g>
+              <line class="cls-1" x1="33.5" y1="22.68" x2="33.5" y2="32.6"/>
+              <line class="cls-2" x1="33.5" y1="42.13" x2="33.5" y2="42.13"/>
+            </g>
+            <g>
+              <circle class="cls-1" cx="53.5" cy="13.49" r="12.5"/>
+              <line class="cls-1" x1="53.5" y1="12.26" x2="53.5" y2="14.73"/>
+            </g>
+            <path class="cls-1" d="M41.75,9.02l-2.37-3.64c-2.78-4.26-8.97-4.26-11.75,0L2.17,44.41c-3.08,4.72.27,11.01,5.87,11.01h50.91c5.6,0,8.95-6.29,5.87-11.01l-.15-.23"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

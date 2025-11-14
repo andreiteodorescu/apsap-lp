@@ -11,6 +11,7 @@
     &-item {
         width: 28%;
         margin-bottom: rem(30px);
+        //width: 46%;
     }
 
     &-title {
@@ -52,6 +53,33 @@
     &-paragraph {
         font-size: rem(14px);
         margin: 0;
+    }
+
+    &-content {
+        color: #273266;
+        font-size: rem(14px);
+    }
+
+    &-preview {
+        // No special styles needed, just the container
+    }
+
+    &-full {
+        // Hidden by default with inline style
+    }
+
+    &-read-more {
+        display: inline-block;
+        margin-top: rem(8px);
+        color: $blue-main;
+        font-family: $font-family-extrabold;
+        font-size: rem(14px);
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     &-count {

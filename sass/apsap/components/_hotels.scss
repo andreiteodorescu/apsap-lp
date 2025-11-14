@@ -48,15 +48,12 @@
 
                     &::before {
                         content: "";
-                        width: 6px;
-                        height: 6px;
                         width: rem(6px);
                         height: rem(6px);
                         border-radius: 50%;
                         position: absolute;
                         left: 0;
                         top: 50%;
-                        margin-top: -3px;
                         margin-top: rem(-3px);
                         background-color: $green-blue;
                     }

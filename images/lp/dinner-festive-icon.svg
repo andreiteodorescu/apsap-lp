@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #5eb461;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="IMPORTANT_CINA_wide" data-name="IMPORTANT+CINA_wide">
+      <g id="CINA_FESTIVA" data-name="CINA FESTIVA">
+        <g id="cina_festiva_icon" data-name="cina festiva_icon">
+          <circle class="cls-2" cx="33.5" cy="73.5" r="22.5"/>
+          <g id="g2070">
+            <path id="path2072" class="cls-1" d="M11.83,24.83h43.33v-8.67H11.83v8.67Z"/>
+            <g id="g2074">
+              <g id="g2076">
+                <g id="g2082">
+                  <path id="path2084" class="cls-1" d="M24.83,1h-8.67v4.33c0,2.39,1.94,4.33,4.33,4.33s4.33-1.94,4.33-4.33V1Z"/>
+                </g>
+                <g id="g2086">
+                  <path id="path2088" class="cls-1" d="M50.83,1h-8.67v4.33c0,2.39,1.94,4.33,4.33,4.33s4.33-1.94,4.33-4.33V1Z"/>
+                </g>
+                <g id="g2090">
+                  <path id="path2092" class="cls-1" d="M24.83,37.83c0-2.39-1.94-4.33-4.33-4.33H1v8.67h23.83v-4.33Z"/>
+                </g>
+                <g id="g2094">
+                  <path id="path2096" class="cls-1" d="M66,33.5h-19.5c-2.39,0-4.33,1.94-4.33,4.33v4.33h23.83v-8.67Z"/>
+                </g>
+                <g id="g2098">
+                  <path id="path2100" class="cls-1" d="M5.33,42.17L1,59.5"/>
+                </g>
+                <g id="g2102">
+                  <path id="path2104" class="cls-1" d="M61.67,42.17l4.33,17.33"/>
+                </g>
+                <g id="g2114">
+                  <path id="path2116" class="cls-1" d="M33.5,24.83v34.67"/>
+                </g>
+                <g id="g2118">
+                  <path id="path2120" class="cls-1" d="M24.83,59.5h17.33"/>
+                </g>
+                <g id="g2122">
+                  <path id="path2124" class="cls-1" d="M1,33.5l2.17-8.67L1,7.5"/>
+                </g>
+                <g id="g2126">
+                  <path id="path2128" class="cls-1" d="M66,33.5l-2.17-8.67,2.17-17.33"/>
+                </g>
+                <g id="g2130">
+                  <path id="path2132" class="cls-1" d="M20.5,9.67v6.5"/>
+                </g>
+                <g id="g2134">
+                  <path id="path2136" class="cls-1" d="M46.5,9.67v6.5"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

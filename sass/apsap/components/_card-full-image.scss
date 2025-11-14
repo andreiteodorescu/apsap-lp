@@ -33,12 +33,18 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background: linear-gradient(to top, rgba(0,0,0, .6), rgba(0,0,0, .2) 50%, transparent);
+        background: linear-gradient(to top, rgba(0,0,0, .6), rgba(0,0,0, .5) 50%, transparent);
         width: 100%;
         padding: rem(10px) rem(20px);
-
         @media (max-width: rem(480px)) {
             padding: rem(7px) rem(20px);
+        }
+    }
+
+    .hotel-stars {
+        span {
+            color: #f9be15;
+            font-size: 12px;
         }
     }
 
@@ -51,6 +57,11 @@
         font-family: $font-family-bold;
         font-size: rem(28px);
         margin: 0;
+
+        &-smaller {
+            font-size: rem(21px);
+            line-height: 1;
+        }
     }
 
     &-small {

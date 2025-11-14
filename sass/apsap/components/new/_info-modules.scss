@@ -1,0 +1,9 @@
+.info-module {
+  margin-top: 60px;
+
+  &-limited {
+    @include media-breakpoint-up(xl) {
+      max-width: 65%;
+    }
+  }
+}
