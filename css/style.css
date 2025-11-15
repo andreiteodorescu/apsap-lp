@@ -21811,6 +21811,107 @@ section:has(.photo-gallery-slider) {
   padding-right: 15px;
 }
 
+.info-module-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info-module-3-row {
+  display: flex;
+  gap: 15px;
+}
+
+.info-module-3-title {
+  font-size: 30px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+@media (max-width: 1199.98px) {
+  .info-module-3-title {
+    font-size: 26px;
+  }
+}
+
+.info-module-3-text {
+  margin-bottom: 0;
+}
+
+.benefits-timeline {
+  background-image: url(../images/lp/dot.png);
+  background-repeat: repeat-x;
+  background-position: 0 72px;
+}
+@media (max-width: 991.98px) {
+  .benefits-timeline {
+    background-image: none;
+  }
+}
+.benefits-timeline-content {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .benefits-timeline-content {
+    flex-wrap: wrap;
+    gap: 2%;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .benefits-timeline-content {
+    column-gap: 0;
+  }
+}
+.benefits-timeline-content-card {
+  flex: 1;
+}
+@media (max-width: 991.98px) {
+  .benefits-timeline-content-card {
+    width: 48%;
+    flex: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .benefits-timeline-content-card {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .benefits-timeline-content-card img {
+    width: 80px;
+  }
+}
+.benefits-timeline-content-card-title {
+  font-size: 32px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199.98px) {
+  .benefits-timeline-content-card-title {
+    font-size: 26px;
+  }
+}
+.benefits-timeline-content-card-text {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.benefits-timeline-content-card-1 {
+  color: #215e9e;
+}
+.benefits-timeline-content-card-2 {
+  color: #8357a2;
+}
+.benefits-timeline-content-card-3 {
+  color: #c6386b;
+}
+.benefits-timeline-content-card-4 {
+  color: #5eb461;
+}
+
 .footer {
   margin-top: 1.875rem;
   background-image: linear-gradient(to top, #ababab, #d2d2d2);

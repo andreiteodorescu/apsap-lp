@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1055 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f9bb8;
+      }
+
+      .cls-2 {
+        fill: #f9be13;
+      }
+
+      .cls-3 {
+        fill: #79c3d4;
+      }
+
+      .cls-4 {
+        fill: #397a89;
+      }
+    </style>
+  </defs>
+  <g id="PANEL">
+    <g id="INFO_wide">
+      <g id="color_separator_01">
+        <rect class="cls-2" width="263.75" height="15"/>
+        <rect class="cls-4" x="263.75" width="263.75" height="15"/>
+        <rect class="cls-1" x="527.5" width="263.75" height="15"/>
+        <rect class="cls-3" x="791.25" width="263.75" height="15"/>
+      </g>
+    </g>
+  </g>
+</svg>

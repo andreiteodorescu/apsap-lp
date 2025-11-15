@@ -1,0 +1,76 @@
+.benefits-timeline {
+  background-image: url(../images/lp/dot.png);
+  background-repeat: repeat-x;
+  background-position: 0 72px;
+
+  @include media-breakpoint-down(lg) {
+    background-image: none;
+  }
+
+  &-content {
+    display: flex;
+    gap: 40px;
+
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      gap: 2%;
+      row-gap: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      column-gap: 0;
+    }
+
+    &-card {
+      flex: 1;
+
+      @include media-breakpoint-down(lg) {
+        width: 48%;
+        flex: auto;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+
+      img {
+        @include media-breakpoint-down(lg) {
+          width: 80px;
+        }
+      }
+
+      &-title {
+        font-size: 32px;
+        font-family: $font-family-bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-down(xl) {
+          font-size: 26px;
+        }
+      }
+
+      &-text {
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+
+      &-1 {
+        color: $blue-whatever;
+      }
+
+      &-2 {
+        color: $new-purple;
+      }
+
+      &-3 {
+        color: $pink;
+      }
+
+      &-4 {
+        color: $new-green;
+      }
+    }
+  }
+}
