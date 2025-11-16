@@ -582,3 +582,17 @@ body {
     max-width: 65%;
   }
 }
+
+.component-blue-diamonds {
+  background-color: #2d3845;
+  background-image: url(../images/diamonds-bg.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: #fff;
+  margin-top: 60px;
+
+  @include media-breakpoint-down(xl) {
+    background-size: rem(1920px) rem(1040px);
+  }
+}
