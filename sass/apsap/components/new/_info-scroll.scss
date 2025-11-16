@@ -53,6 +53,22 @@
         @include media-breakpoint-down(sm) {
           font-size: 16px;
         }
+
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: #87898c;
+          border-radius: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #d0d1d2;
+          border-radius: 6px;
+        }
+
+        scrollbar-color: #87898c;
       }
     }
   }
