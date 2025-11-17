@@ -596,3 +596,28 @@ body {
     background-size: rem(1920px) rem(1040px);
   }
 }
+
+.thank-you-header {
+  margin-bottom: 50px;
+
+  &-icon {
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(xl) {
+      width: 150px;
+    }
+  }
+
+  &-title {
+    font-size: 36px;
+    font-family: $font-family-bold;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 30px;
+    }
+  }
+
+  &-text {
+    margin-bottom: 0;
+  }
+}

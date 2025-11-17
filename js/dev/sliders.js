@@ -287,3 +287,13 @@ const photoGallerySlider = new Swiper("#photoGallerySlider", {
     sensitivity: 1,
   },
 });
+
+const packagesSlider = new Swiper("#packagesSlider", {
+  slidesPerView: "auto",
+  spaceBetween: 25,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+  },
+});

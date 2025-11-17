@@ -13179,6 +13179,30 @@ body {
   }
 }
 
+.thank-you-header {
+  margin-bottom: 50px;
+}
+.thank-you-header-icon {
+  margin-bottom: 15px;
+}
+@media (max-width: 1199.98px) {
+  .thank-you-header-icon {
+    width: 150px;
+  }
+}
+.thank-you-header-title {
+  font-size: 36px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1199.98px) {
+  .thank-you-header-title {
+    font-size: 30px;
+  }
+}
+.thank-you-header-text {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
   src: url("../fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"), url("../fonts/rubrikedgenew-bold-webfont.woff") format("woff");
@@ -21351,6 +21375,427 @@ section:has(.agenda-info-slider) {
   scrollbar-color: #87898c;
 }
 
+section:has(.packages-slider) {
+  overflow-x: clip;
+}
+@media (min-width: 1600px) {
+  section:has(.packages-slider) .complex-title {
+    margin-left: calc((100vw - 1600px) / 2);
+  }
+}
+@media (max-width: 1599px) {
+  section:has(.packages-slider) .complex-title {
+    margin-left: 30px;
+  }
+}
+
+.packages-slider {
+  overflow: visible;
+  padding-top: 10px;
+}
+@media (min-width: 1600px) {
+  .packages-slider {
+    margin-left: calc((100vw - 1600px) / 2);
+  }
+}
+@media (max-width: 1599px) {
+  .packages-slider {
+    margin-left: 30px;
+  }
+}
+.packages-slider .swiper-slide {
+  width: 515px;
+}
+@media (max-width: 1199.98px) {
+  .packages-slider .swiper-slide {
+    width: 315px;
+  }
+}
+.packages-slider .swiper-wrapper {
+  padding-right: 30px;
+}
+
+.package-rainbow {
+  height: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.package-rainbow > * {
+  width: 25%;
+}
+.package-rainbow-tile-1 {
+  background-color: #0c2329;
+}
+.package-rainbow-tile-2 {
+  background-color: #1d90af;
+}
+.package-rainbow::after {
+  content: "";
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 25%;
+  top: 0;
+  background-color: #0b3a47;
+}
+.package-rainbow::before {
+  content: "";
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #326f7e;
+}
+
+.package-cta-wrap {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 0;
+  width: 60%;
+}
+@media (max-width: 1199.98px) {
+  .package-cta-wrap {
+    width: 100%;
+  }
+}
+.package-cta-wrap::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 20px solid #1d8fae;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1199.98px) {
+  .package-cta-wrap::before {
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 15px;
+    top: -15px;
+  }
+}
+.package-cta-wrap:hover::before {
+  border-bottom-color: #269fc0;
+}
+.package-cta-wrap:hover .package-cta {
+  background-color: #269fc0;
+}
+
+.package-cta {
+  display: inline-flex;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #1d8fae;
+  height: 54px;
+  padding: 5px 20px 3px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1199.98px) {
+  .package-cta {
+    font-size: 21px;
+    height: 44px;
+  }
+}
+
+.reservation-package-card {
+  width: 515px;
+  background: linear-gradient(to bottom, #182c3a, #1d8fae);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 4px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  margin-bottom: 65px;
+}
+@media (max-width: 1199.98px) {
+  .reservation-package-card {
+    width: 315px;
+  }
+}
+.reservation-package-card-content {
+  padding: 65px 0 35px;
+}
+@media (max-width: 1199.98px) {
+  .reservation-package-card-content {
+    padding: 45px 0 25px;
+  }
+}
+
+.package-spacing {
+  padding: 0 40px;
+}
+@media (max-width: 1199.98px) {
+  .package-spacing {
+    padding: 0 20px;
+  }
+}
+
+.package-small-title {
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.package-deal {
+  font-size: 18px;
+  line-height: 1;
+}
+.package-deal strong {
+  font-weight: 400;
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 45px;
+}
+@media (max-width: 1199.98px) {
+  .package-deal strong {
+    font-size: 35px;
+  }
+}
+.package-deal sup {
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
+  top: -18px;
+}
+@media (max-width: 1199.98px) {
+  .package-deal sup {
+    top: -10px;
+  }
+}
+.package-deal-skinny {
+  display: inline;
+  font-size: 45px;
+  font-family: "BebasNeue-Thin";
+}
+@media (max-width: 1199.98px) {
+  .package-deal-skinny {
+    font-size: 35px;
+  }
+}
+
+.package-strike {
+  text-decoration: line-through;
+}
+
+.package-under-deal {
+  font-size: 18px;
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  line-height: 1;
+}
+@media (max-width: 1199.98px) {
+  .package-under-deal {
+    flex-direction: column;
+  }
+}
+
+.package-discount {
+  position: relative;
+  padding-left: 10px;
+}
+.package-discount::before {
+  content: "";
+  height: 16px;
+  width: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 1199.98px) {
+  .package-discount {
+    padding-left: 0;
+  }
+  .package-discount::before {
+    display: none;
+  }
+}
+
+.package-scrollable {
+  overflow: auto;
+  line-height: 1.2;
+  max-height: 310px;
+  padding-right: 10px;
+  color: #d2d2d2;
+}
+.package-scrollable::-webkit-scrollbar {
+  width: 4px;
+}
+.package-scrollable::-webkit-scrollbar-track {
+  background-color: #87898c;
+  border-radius: 6px;
+}
+.package-scrollable::-webkit-scrollbar-thumb {
+  background-color: #d0d1d2;
+  border-radius: 6px;
+}
+.package-scrollable {
+  scrollbar-color: #87898c;
+}
+.package-scrollable-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.package-scrollable-list li {
+  position: relative;
+  padding-left: 15px;
+}
+.package-scrollable-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #d2d2d2;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.reservation-package-icon {
+  position: absolute;
+  left: 40px;
+  top: -50px;
+}
+@media (max-width: 1199.98px) {
+  .reservation-package-icon {
+    width: 70px;
+    top: -35px;
+    left: 20px;
+  }
+}
+
+.package-card-grey {
+  background: linear-gradient(to bottom, #2d2c2c, #a1a1a1);
+}
+.package-card-grey .package-rainbow-tile-1 {
+  background-color: #121324;
+}
+.package-card-grey .package-rainbow-tile-2 {
+  background-color: #cccccc;
+}
+.package-card-grey .package-rainbow::after {
+  background-color: #28313d;
+}
+.package-card-grey .package-rainbow::before {
+  background-color: #a1a1a1;
+}
+.package-card-grey .package-cta-wrap::before {
+  border-bottom-color: #a1a1a1;
+}
+.package-card-grey .package-cta-wrap:hover::before {
+  border-bottom-color: #b4b2b2;
+}
+.package-card-grey .package-cta-wrap:hover .package-cta {
+  background-color: #b4b2b2;
+}
+.package-card-grey .package-cta {
+  background-color: #a1a1a1;
+}
+
+.package-card-red {
+  background: linear-gradient(to bottom, #2f2c2d, #bd3160);
+}
+.package-card-red .package-rainbow-tile-1 {
+  background-color: #581a2f;
+}
+.package-card-red .package-rainbow-tile-2 {
+  background-color: #d87d9d;
+}
+.package-card-red .package-rainbow::after {
+  background-color: #8a2547;
+}
+.package-card-red .package-rainbow::before {
+  background-color: #bf3161;
+}
+.package-card-red .package-cta-wrap::before {
+  border-bottom-color: #bd3160;
+}
+.package-card-red .package-cta-wrap:hover::before {
+  border-bottom-color: #d33d6f;
+}
+.package-card-red .package-cta-wrap:hover .package-cta {
+  background-color: #d33d6f;
+}
+.package-card-red .package-cta {
+  background-color: #bd3160;
+}
+
+.package-card-green {
+  background: linear-gradient(to bottom, #192d3a, #53aa56);
+}
+.package-card-green .package-rainbow-tile-1 {
+  background-color: #0e190e;
+}
+.package-card-green .package-rainbow-tile-2 {
+  background-color: #6ada6d;
+}
+.package-card-green .package-rainbow::after {
+  background-color: #1e451f;
+}
+.package-card-green .package-rainbow::before {
+  background-color: #53ab56;
+}
+.package-card-green .package-cta-wrap::before {
+  border-bottom-color: #53aa56;
+}
+.package-card-green .package-cta-wrap:hover::before {
+  border-bottom-color: #65c768;
+}
+.package-card-green .package-cta-wrap:hover .package-cta {
+  background-color: #65c768;
+}
+.package-card-green .package-cta {
+  background-color: #53aa56;
+}
+
+.package-card-orange {
+  background: linear-gradient(to bottom, #2e2c2c, #ee5d1f);
+}
+.package-card-orange .package-rainbow-tile-1 {
+  background-color: #34190c;
+}
+.package-card-orange .package-rainbow-tile-2 {
+  background-color: #f38557;
+}
+.package-card-orange .package-rainbow::after {
+  background-color: #6e2e12;
+}
+.package-card-orange .package-rainbow::before {
+  background-color: #ef5d1f;
+}
+.package-card-orange .package-cta-wrap::before {
+  border-bottom-color: #ee5d1f;
+}
+.package-card-orange .package-cta-wrap:hover::before {
+  border-bottom-color: #f47b47;
+}
+.package-card-orange .package-cta-wrap:hover .package-cta {
+  background-color: #f47b47;
+}
+.package-card-orange .package-cta {
+  background-color: #ee5d1f;
+}
+
 section:has(.photo-gallery-slider) {
   overflow-x: clip;
 }
@@ -22177,6 +22622,26 @@ section:has(.photo-gallery-slider) {
 }
 .benefits-timeline-content-card-4 {
   color: #5eb461;
+}
+
+.benefits-timeline-payment {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+.benefits-timeline-payment strong {
+  display: block;
+}
+@media (max-width: 575.98px) {
+  .benefits-timeline-payment strong {
+    display: inline;
+  }
+}
+@media (max-width: 575.98px) {
+  .benefits-timeline-payment {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .component-sponsors-content {

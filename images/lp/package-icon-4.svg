@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5eb461;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.3px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="PACKS_wide">
+      <g id="PACKS">
+        <g id="PACK_BASE">
+          <g id="pack_base_icon">
+            <circle class="cls-1" cx="50" cy="50" r="50"/>
+            <g id="g1440">
+              <g id="g1442">
+                <g id="g1444">
+                  <g id="g1450">
+                    <path id="path1452" class="cls-2" d="M43.79,31.22c0,3.44-2.79,6.22-6.22,6.22s-6.22-2.79-6.22-6.22,2.79-6.22,6.22-6.22,6.22,2.79,6.22,6.22Z"/>
+                  </g>
+                  <g id="g1454">
+                    <path id="path1456" class="cls-2" d="M37.56,75v-14.93"/>
+                  </g>
+                  <g id="g1458">
+                    <path id="path1460" class="cls-2" d="M31.32,45.26v29.74h12.49v-31.23h12.52v-6.32h-26.14c-2.86,0-5.19,2.32-5.19,5.19v14.53h6.32"/>
+                  </g>
+                  <g id="g1462">
+                    <path id="path1464" class="cls-2" d="M56.33,40.71h7.78"/>
+                  </g>
+                  <g id="g1466">
+                    <path id="path1468" class="cls-2" d="M50.1,43.77v12.37h24.9v-31.14h-24.9v12.45"/>
+                  </g>
+                  <g id="g1470">
+                    <path id="path1472" class="cls-2" d="M70.12,75l-2.9-18.86"/>
+                  </g>
+                  <g id="g1474">
+                    <path id="path1476" class="cls-2" d="M54.98,75l2.9-18.86"/>
+                  </g>
+                  <g id="g1478">
+                    <path id="path1480" class="cls-2" d="M68.77,66.24h-12.45"/>
+                  </g>
+                  <g id="g1482">
+                    <path id="path1484" class="cls-2" d="M50.1,75h24.9"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

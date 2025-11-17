@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6386b;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.3px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="PACKS_wide">
+      <g id="PACKS">
+        <g id="PACK_CAZARE">
+          <g id="pack_cazare_icon">
+            <circle class="cls-1" cx="50" cy="50" r="50"/>
+            <g id="g1725">
+              <g id="g1727">
+                <g id="g1729">
+                  <g id="g1735">
+                    <path id="path1737" class="cls-2" d="M75,68.78H25v-4.15c0-1.15.93-2.07,2.07-2.07h45.85c1.15,0,2.07.93,2.07,2.07v4.15Z"/>
+                  </g>
+                  <g id="g1739">
+                    <path id="path1741" class="cls-2" d="M36.39,71.89c0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11,1.39-3.11,3.11-3.11,3.11,1.39,3.11,3.11Z"/>
+                  </g>
+                  <g id="g1743">
+                    <path id="path1745" class="cls-2" d="M69.83,71.89c0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11,1.39-3.11,3.11-3.11,3.11,1.39,3.11,3.11Z"/>
+                  </g>
+                  <g id="g1747">
+                    <path id="path1749" class="cls-2" d="M69.71,62.55v-23.76c0-7.62-6.18-13.8-13.8-13.8h-11.83c-7.62,0-13.8,6.18-13.8,13.8v23.76"/>
+                  </g>
+                  <g id="g1751">
+                    <path id="path1753" class="cls-2" d="M50,25v6.22"/>
+                  </g>
+                  <g id="g1755">
+                    <path id="path1757" class="cls-2" d="M46.16,31.22h7.69"/>
+                  </g>
+                  <path id="path1759" class="cls-2" d="M63.37,62.55h-26.97v-16.18h26.97v16.18Z"/>
+                  <g id="g1761">
+                    <path id="path1763" class="cls-2" d="M53.11,40.15h-6.22c-1.15,0-2.07.93-2.07,2.07v4.15h10.37v-4.15c0-1.15-.93-2.07-2.07-2.07Z"/>
+                  </g>
+                  <g id="g1765">
+                    <path id="path1767" class="cls-2" d="M42.62,46.37v16.18"/>
+                  </g>
+                  <g id="g1769">
+                    <path id="path1771" class="cls-2" d="M57.14,46.37v16.18"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f9bb8;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.3px;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-2">
+    <g id="PACKS_wide">
+      <g id="PACKS">
+        <g id="PACK_DISCOUNT">
+          <g id="pack_discount_icon">
+            <circle class="cls-1" cx="50" cy="50" r="50"/>
+            <g>
+              <polygon class="cls-2" points="65.62 53.12 65.62 25 34.37 25 34.37 53.12 25 53.12 50 75 75 53.12 65.62 53.12"/>
+              <circle class="cls-2" cx="44.79" cy="36.52" r="3.12"/>
+              <circle class="cls-2" cx="55.17" cy="53.09" r="3.12"/>
+              <line class="cls-2" x1="43.79" y1="51.02" x2="56.21" y2="38.6"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

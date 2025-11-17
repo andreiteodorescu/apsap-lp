@@ -1,0 +1,484 @@
+section:has(.packages-slider) {
+  overflow-x: clip;
+
+  .complex-title {
+    @media (min-width: 1600px) {
+      margin-left: calc((100vw - 1600px) / 2);
+    }
+
+    @media (max-width: 1599px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.packages-slider {
+  overflow: visible;
+  padding-top: 10px;
+
+  @media (min-width: 1600px) {
+    margin-left: calc((100vw - 1600px) / 2);
+  }
+
+  @media (max-width: 1599px) {
+    margin-left: 30px;
+  }
+
+  .swiper-slide {
+    width: 515px;
+
+    @include media-breakpoint-down(xl) {
+      width: 315px;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-right: 30px;
+  }
+}
+
+.package-rainbow {
+  height: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  > * {
+    width: 25%;
+  }
+
+  &-tile-1 {
+    background-color: #0c2329;
+  }
+
+  &-tile-2 {
+    background-color: #1d90af;
+  }
+
+  &::after {
+    content: "";
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    background-color: #0b3a47;
+  }
+
+  &::before {
+    content: "";
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: #326f7e;
+  }
+}
+
+.package-cta-wrap {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 0;
+  width: 60%;
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid #1d8fae;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease-in-out;
+
+    @include media-breakpoint-down(xl) {
+      border-left-width: 20px;
+      border-right-width: 20px;
+      border-bottom-width: 15px;
+      top: -15px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-bottom-color: #269fc0;
+    }
+
+    .package-cta {
+      background-color: #269fc0;
+    }
+  }
+}
+
+.package-cta {
+  display: inline-flex;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #1d8fae;
+  height: 54px;
+  padding: 5px 20px 3px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-family-bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 21px;
+    height: 44px;
+  }
+}
+
+.reservation-package-card {
+  width: 515px;
+  background: linear-gradient(to bottom, #182c3a, #1d8fae);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 4px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  margin-bottom: 65px;
+
+  @include media-breakpoint-down(xl) {
+    width: 315px;
+  }
+
+  &-content {
+    padding: 65px 0 35px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 45px 0 25px;
+    }
+  }
+}
+
+.package-spacing {
+  padding: 0 40px;
+
+  @include media-breakpoint-down(xl) {
+    padding: 0 20px;
+  }
+}
+
+.package-small-title {
+  font-family: $font-family-bold;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.package-deal {
+  font-size: 18px;
+  line-height: 1;
+
+  strong {
+    font-weight: 400;
+    font-family: $font-family-bebas-regular;
+    font-size: 45px;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 35px;
+    }
+  }
+
+  sup {
+    font-size: 18px;
+    font-family: $font-family-medium;
+    top: -18px;
+
+    @include media-breakpoint-down(xl) {
+      top: -10px;
+    }
+  }
+
+  &-skinny {
+    display: inline;
+    font-size: 45px;
+    font-family: "BebasNeue-Thin";
+
+    @include media-breakpoint-down(xl) {
+      font-size: 35px;
+    }
+  }
+}
+
+.package-strike {
+  text-decoration: line-through;
+}
+
+.package-under-deal {
+  font-size: 18px;
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  line-height: 1;
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+  }
+}
+
+.package-discount {
+  position: relative;
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    height: 16px;
+    width: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.package-scrollable {
+  overflow: auto;
+  line-height: 1.2;
+  max-height: 310px;
+  padding-right: 10px;
+  color: $grey-medium-3;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #87898c;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d1d2;
+    border-radius: 6px;
+  }
+
+  scrollbar-color: #87898c;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      position: relative;
+      padding-left: 15px;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: $grey-medium-3;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.reservation-package-icon {
+  position: absolute;
+  left: 40px;
+  top: -50px;
+
+  @include media-breakpoint-down(xl) {
+    width: 70px;
+    top: -35px;
+    left: 20px;
+  }
+}
+
+.package-card-grey {
+  background: linear-gradient(to bottom, #2d2c2c, #a1a1a1);
+
+  .package-rainbow {
+    &-tile-1 {
+      background-color: #121324;
+    }
+
+    &-tile-2 {
+      background-color: #cccccc;
+    }
+
+    &::after {
+      background-color: #28313d;
+    }
+
+    &::before {
+      background-color: #a1a1a1;
+    }
+  }
+
+  .package-cta-wrap {
+    &::before {
+      border-bottom-color: #a1a1a1;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom-color: #b4b2b2;
+      }
+
+      .package-cta {
+        background-color: #b4b2b2;
+      }
+    }
+  }
+
+  .package-cta {
+    background-color: #a1a1a1;
+  }
+}
+
+.package-card-red {
+  background: linear-gradient(to bottom, #2f2c2d, #bd3160);
+
+  .package-rainbow {
+    &-tile-1 {
+      background-color: #581a2f;
+    }
+
+    &-tile-2 {
+      background-color: #d87d9d;
+    }
+
+    &::after {
+      background-color: #8a2547;
+    }
+
+    &::before {
+      background-color: #bf3161;
+    }
+  }
+
+  .package-cta-wrap {
+    &::before {
+      border-bottom-color: #bd3160;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom-color: #d33d6f;
+      }
+
+      .package-cta {
+        background-color: #d33d6f;
+      }
+    }
+  }
+
+  .package-cta {
+    background-color: #bd3160;
+  }
+}
+
+.package-card-green {
+  background: linear-gradient(to bottom, #192d3a, #53aa56);
+
+  .package-rainbow {
+    &-tile-1 {
+      background-color: #0e190e;
+    }
+
+    &-tile-2 {
+      background-color: #6ada6d;
+    }
+
+    &::after {
+      background-color: #1e451f;
+    }
+
+    &::before {
+      background-color: #53ab56;
+    }
+  }
+
+  .package-cta-wrap {
+    &::before {
+      border-bottom-color: #53aa56;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom-color: #65c768;
+      }
+
+      .package-cta {
+        background-color: #65c768;
+      }
+    }
+  }
+
+  .package-cta {
+    background-color: #53aa56;
+  }
+}
+
+.package-card-orange {
+  background: linear-gradient(to bottom, #2e2c2c, #ee5d1f);
+
+  .package-rainbow {
+    &-tile-1 {
+      background-color: #34190c;
+    }
+
+    &-tile-2 {
+      background-color: #f38557;
+    }
+
+    &::after {
+      background-color: #6e2e12;
+    }
+
+    &::before {
+      background-color: #ef5d1f;
+    }
+  }
+
+  .package-cta-wrap {
+    &::before {
+      border-bottom-color: #ee5d1f;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom-color: #f47b47;
+      }
+
+      .package-cta {
+        background-color: #f47b47;
+      }
+    }
+  }
+
+  .package-cta {
+    background-color: #ee5d1f;
+  }
+}
