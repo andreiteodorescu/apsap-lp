@@ -130,9 +130,11 @@ body {
 
     @media (max-width: rem(2219px)) {
       &.component-skew-inner-tall {
-        background-image: url("../images/diamonds-bg.svg"),
-          url("../images/diamonds-bg.svg");
-        background-position: center top, center bottom;
+        background-image:
+          url("../images/diamonds-bg.svg"), url("../images/diamonds-bg.svg");
+        background-position:
+          center top,
+          center bottom;
         background-repeat: no-repeat, no-repeat;
       }
     }
@@ -325,17 +327,22 @@ body {
 }
 
 .grey-header-gradient {
-  background-image: url(../images/diamonds-bg-white.svg),
+  background-image:
+    url(../images/diamonds-bg-white.svg),
     linear-gradient($grey-medium-3, $body-bg 30%);
   background-position: center top;
   background-repeat: no-repeat;
 
   @media (min-width: rem(2220px)) {
-    background-size: 100% rem(1000px), auto;
+    background-size:
+      100% rem(1000px),
+      auto;
   }
 
   @include media-breakpoint-down(xl) {
-    background-size: rem(1920px) rem(740px), auto;
+    background-size:
+      rem(1920px) rem(740px),
+      auto;
   }
 }
 
@@ -509,7 +516,25 @@ body {
   color: $orange;
 }
 
+.stage-4-color {
+  color: $blue-mate;
+}
+
 .new-website-page {
+  &:not(.new-website-page-online) {
+    background-image: url(../images/diamonds-bg.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @media (min-width: rem(2220px)) {
+      background-size: 100% rem(1000px);
+    }
+
+    @include media-breakpoint-down(xl) {
+      background-size: rem(1920px) rem(740px);
+    }
+  }
+
   .main {
     background-position: center 1700px;
   }
@@ -620,4 +645,11 @@ body {
   &-text {
     margin-bottom: 0;
   }
+}
+
+.neural-bg {
+  background-image: url(../images/lp/neural.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 1600px auto;
 }

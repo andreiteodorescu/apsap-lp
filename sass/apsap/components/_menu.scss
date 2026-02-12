@@ -1,9 +1,21 @@
 .header {
-  height: rem(95px);
+  position: relative;
+  z-index: 1;
+
+  .container-narrow {
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 .menu {
   padding: 0;
+  background-color: $blue-new;
+  height: rem(45px);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .menu-btn {
@@ -35,7 +47,7 @@
 
     &::after,
     &::before {
-      content: '';
+      content: "";
       width: rem(40px);
       height: rem(2px);
       background: $grey-light;
@@ -64,13 +76,14 @@
     position: absolute;
     display: flex;
     align-items: center;
+    top: -4px;
   }
 }
 
 .menu-btn-icon {
-  width: rem(32px);
-  height: rem(32px);
-  fill: $blue-menu;
+  width: rem(22px);
+  height: rem(22px);
+  fill: $new-blue;
 }
 
 .menu-left .menu-btn-icon {
@@ -90,11 +103,13 @@
 
   .menu-btn-icon {
     margin-left: rem(8px);
+    fill: $grey-medium-4;
   }
 }
 
 .main-submenu {
-  background-image: url('../images/diamonds-bg.svg'),
+  background-image:
+    url("../images/diamonds-bg.svg"),
     linear-gradient($blue-normal, $blue-medium);
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +212,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       background: linear-gradient(
@@ -224,7 +239,7 @@
         color: $grey-medium;
 
         &::before {
-          content: '>';
+          content: ">";
           position: absolute;
           left: 0;
           top: 4px;
@@ -261,26 +276,6 @@
   }
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: rem(200px);
-  height: rem(95px);
-  background-color: $blue-main;
-  filter: drop-shadow(0 rem(3px) rem(3px) rgba(0, 0, 0, 0.3));
-  z-index: 1001;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-
-  &-icon {
-    width: rem(104px);
-    height: rem(39px);
-    fill: #fff;
-  }
-}
-
 .nav-active {
   overflow: hidden;
 
@@ -290,6 +285,7 @@
 
   .menu {
     color: #fff;
+    position: static;
 
     a,
     .menu-btn {
@@ -363,37 +359,21 @@
   top: 0;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 48px;
-    height: rem(48px);
+    height: 45px;
+    height: rem(45px);
     animation: stickyMenuBG 0.3s ease-out 0.1s forwards;
   }
 
   .logo {
-    width: rem(168px);
-    height: rem(80px);
-
-    &-icon {
-      width: rem(100px);
-      height: rem(35px);
-    }
+    position: relative;
   }
 
   body:not(.nav-active) & {
-    .menu-btn {
-      top: rem(-16px);
-    }
-
-    .menu-btn-icon {
-      width: rem(24px);
-      height: rem(24px);
-      fill: #fff;
-    }
-
     .menu-btn-text {
       color: #fff;
       top: rem(2px);
@@ -420,7 +400,7 @@
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         width: 100%;
         height: 80px;
         height: rem(80px);
@@ -467,7 +447,7 @@
 
     &::after,
     &::before {
-      content: '';
+      content: "";
       width: rem(40px);
       height: rem(2px);
       background: $grey-light;
@@ -567,7 +547,7 @@
         padding-right: rem(10px) !important;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: 0;

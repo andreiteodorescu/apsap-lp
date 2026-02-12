@@ -18,19 +18,20 @@ $container-max-widths: (
   xxxl: 1624px,
 );
 
-$font-family-base: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
-$font-family-base-italic: "RubrikEdgeNew-RegularItalic", Tahoma, Arial,
-  Helvetica, sans-serif;
+$font-family-base:
+  "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+$font-family-base-italic:
+  "RubrikEdgeNew-RegularItalic", Tahoma, Arial, Helvetica, sans-serif;
 $font-family-bold: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
-$font-family-bold-italic: "RubrikEdgeNew-BoldItalic", Tahoma, Arial, Helvetica,
-  sans-serif;
-$font-family-extrabold: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica,
-  sans-serif;
+$font-family-bold-italic:
+  "RubrikEdgeNew-BoldItalic", Tahoma, Arial, Helvetica, sans-serif;
+$font-family-extrabold:
+  "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
 $font-family-light: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
-$font-family-medium: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica,
-  sans-serif;
-$font-family-bebas-regular: "BebasNeue-Regular", Tahoma, Arial, Helvetica,
-  sans-serif;
+$font-family-medium:
+  "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
+$font-family-bebas-regular:
+  "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
 $link-color: #003e66;
 $body-bg: #fafbfb;
 // Bootstrap variables overwrites END
@@ -61,6 +62,7 @@ $grey-light-2: #ccc;
 $grey-medium: #a1a1a1;
 $grey-medium-2: #ababab;
 $grey-medium-3: #d2d2d2;
+$grey-medium-4: #a6a6a6;
 $grey-dark: #2d2c2c;
 $grey-dark-2: #333232;
 $grey-dark-3: #222;

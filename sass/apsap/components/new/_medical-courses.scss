@@ -1,0 +1,165 @@
+.medical-courses {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-content: space-between;
+
+  &-item {
+    width: calc(50% - 5px);
+    background-color: $grey-extralight-6;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    box-shadow:
+      -4px 4px 6px -2px rgba(0, 0, 0, 0.2),
+      4px 0 6px -3px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid $grey-extralight-6;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      pointer-events: none;
+    }
+  }
+}
+
+.medical-course-desciption {
+  margin-top: 1px;
+  background-color: #fff;
+  flex-basis: 37%;
+  border-top-left-radius: 20px;
+  padding: 20px;
+}
+
+.medical-course-date {
+  font-size: 21px;
+  font-family: $font-family-extrabold;
+  line-height: 1;
+}
+
+.medical-course-hours {
+  font-size: 16px;
+  font-family: $font-family-extrabold;
+}
+
+.medical-course-title {
+  font-size: 16px;
+  font-family: $font-family-extrabold;
+  margin-top: 5px;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  span {
+    font-family: $font-family-medium;
+  }
+}
+
+.medical-course-text {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.medical-course-info {
+  flex: 1;
+  position: relative;
+  padding: 25px 20px 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 20px solid #fff;
+  }
+}
+
+.medical-course-tarif {
+  font-size: 14px;
+  font-family: $font-family-extrabold;
+
+  span {
+    font-family: $font-family-bold;
+  }
+}
+
+.medical-course-price-flex {
+  font-size: 32px;
+  font-family: $font-family-extrabold;
+  display: flex;
+  gap: 7px;
+  line-height: 1.2;
+
+  sup {
+    top: -6px;
+  }
+}
+
+.medical-course-price-discount {
+  color: $grey-medium-2;
+  text-decoration: line-through;
+  font-family: $font-family-bold;
+}
+
+.medical-course-price-vat {
+  font-size: 13px;
+}
+
+.medical-course-who {
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+}
+
+.medical-course-who-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+
+  span {
+    font-family: $font-family-bold;
+    display: block;
+  }
+}
+
+.medical-course-who-text {
+  margin-bottom: 0;
+}
+
+.medical-course-cta {
+  text-decoration: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to right, #5273b7 0%, #5273b7 50%, #1f9bb8 100%);
+  display: flex;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &-inner {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 36px;
+    font-family: $font-family-extrabold;
+    line-height: 1;
+
+    span {
+      font-size: 16px;
+      font-family: $font-family-bold;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
-  src: url("../fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -9,7 +10,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-BoldItalic";
-  src: url("../fonts/rubrikedgenew-bolditalic-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-bolditalic-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -18,7 +20,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-Extrabold";
-  src: url("../fonts/rubrikedgenew-extrabold-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-extrabold-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -27,7 +30,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-Light";
-  src: url("../fonts/rubrikedgenew-light-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-light-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -36,7 +40,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-Medium";
-  src: url("../fonts/rubrikedgenew-medium-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-medium-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -45,7 +50,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-Regular";
-  src: url("../fonts/rubrikedgenew-regular-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-regular-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -54,7 +60,8 @@
 
 @font-face {
   font-family: "RubrikEdgeNew-RegularItalic";
-  src: url("../fonts/rubrikedgenew-regularitalic-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/rubrikedgenew-regularitalic-webfont.woff2") format("woff2"),
     url("../fonts/rubrikedgenew-regularitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -63,7 +70,8 @@
 
 @font-face {
   font-family: "BebasNeue-Regular";
-  src: url("../fonts/bebasneue-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/bebasneue-webfont.woff2") format("woff2"),
     url("../fonts/bebasneue-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -72,7 +80,8 @@
 
 @font-face {
   font-family: "BebasNeue-Thin";
-  src: url("../fonts/bebasneue_book-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/bebasneue_book-webfont.woff2") format("woff2"),
     url("../fonts/bebasneue_book-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -87,7 +96,7 @@ strong {
 
 .main-title {
   font-family: $font-family-bebas-regular;
-  font-size: rem(150px);
+  font-size: rem(100px);
   line-height: 1;
   margin-bottom: 0;
   color: $blue-main;

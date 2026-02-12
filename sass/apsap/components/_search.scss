@@ -42,7 +42,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       height: rem(40px);
       width: rem(1px);
       background-color: $grey-extralight-2;
@@ -215,7 +215,7 @@
     border: none;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: rem(-18px);
       top: 50%;
@@ -228,7 +228,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       border-radius: 50%;
       background-color: $red;
       width: 100%;
@@ -297,7 +297,7 @@
 @media (max-width: rem(899px)) {
   .search-wrapper-general {
     display: none;
-    background-image: url('../images/diamonds-bg.svg');
+    background-image: url("../images/diamonds-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $grey-extralight-4;
@@ -334,7 +334,7 @@
       padding-right: rem(70px);
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: rem(5px);
         top: rem(5px);
@@ -345,14 +345,14 @@
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         right: rem(17px);
         top: rem(27px);
         height: rem(15px);
         width: rem(30px);
         z-index: 1;
-        background-image: url('../images/down-arrow.svg');
+        background-image: url("../images/down-arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -434,4 +434,54 @@
     position: relative;
     z-index: 2;
   }
+}
+
+.hero-multiuse-search-split {
+  .container-narrow {
+    max-width: 760px;
+  }
+
+  .second-title {
+    color: $grey-dark-2 !important;
+    font-size: 24px;
+  }
+
+  .search-console-inner {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.02) 0%,
+        rgba(0, 0, 0, 0.25) 50%,
+        rgba(0, 0, 0, 0.02) 100%
+      );
+      transform: translateY(100%);
+      filter: blur(4px);
+    }
+  }
+
+  .search-console-slice {
+    width: 50%;
+
+    &:nth-child(2) .search-console-slice-btn {
+      width: 100%;
+      z-index: auto;
+    }
+
+    &::before {
+      background-color: #d4d4d4;
+    }
+  }
+}
+
+.hero-multiuse-search-no-absolute {
+  position: relative !important;
+  bottom: auto !important;
 }
