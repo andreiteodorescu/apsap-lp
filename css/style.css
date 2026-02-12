@@ -14412,7 +14412,7 @@ body:not(.nav-active) .header-sticky .menu-btn-text {
   top: 50%;
   margin-top: -1.0625rem;
   border-radius: 50%;
-  background-color: #cd1c39;
+  background-color: #c6386b;
   width: 2.1875rem;
   height: 2.1875rem;
   transition: all 0.2s ease-in-out;
@@ -14420,7 +14420,7 @@ body:not(.nav-active) .header-sticky .menu-btn-text {
 .search-console-bubbles::after {
   content: "";
   border-radius: 50%;
-  background-color: #cd1c39;
+  background-color: #c6386b;
   width: 100%;
   height: 100%;
   border: none;
@@ -14431,7 +14431,7 @@ body:not(.nav-active) .header-sticky .menu-btn-text {
   left: 0;
 }
 .search-console-bubbles:active::before, .search-console-bubbles:active::after, .search-console-bubbles:hover::before, .search-console-bubbles:hover::after, .search-console-bubbles:focus::before, .search-console-bubbles:focus::after, .search-console-bubbles:focus-within::before, .search-console-bubbles:focus-within::after {
-  background-color: #e12e4b;
+  background-color: #dc5283;
 }
 .search-console-bubbles:hover::before, .search-console-bubbles:focus::before, .search-console-bubbles:focus-within::before {
   transform: translateX(-0.125rem);
@@ -22924,12 +22924,18 @@ section:has(.photo-gallery-slider) {
 
 .medical-courses {
   display: flex;
-  column-gap: 10px;
-  row-gap: 20px;
+  column-gap: 18px;
+  row-gap: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 80rem) {
+  .medical-courses {
+    flex-direction: column;
+  }
 }
 .medical-courses-item {
-  width: calc(50% - 5px);
+  width: calc(50% - 9px);
   background-color: #efeeee;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -22937,6 +22943,16 @@ section:has(.photo-gallery-slider) {
   box-shadow: -4px 4px 6px -2px rgba(0, 0, 0, 0.2), 4px 0 6px -3px rgba(0, 0, 0, 0.08);
   text-align: left;
   display: flex;
+}
+@media (max-width: 80rem) {
+  .medical-courses-item {
+    width: 100%;
+  }
+}
+@media (max-width: 43.75rem) {
+  .medical-courses-item {
+    flex-direction: column;
+  }
 }
 .medical-courses-item::before {
   content: "";
@@ -22991,6 +23007,8 @@ section:has(.photo-gallery-slider) {
   flex: 1;
   position: relative;
   padding: 25px 20px 10px;
+  display: flex;
+  flex-direction: column;
 }
 .medical-course-info::after {
   content: "";
@@ -23007,6 +23025,7 @@ section:has(.photo-gallery-slider) {
 .medical-course-tarif {
   font-size: 14px;
   font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+  width: 93%;
 }
 .medical-course-tarif span {
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
@@ -23018,6 +23037,7 @@ section:has(.photo-gallery-slider) {
   display: flex;
   gap: 7px;
   line-height: 1.2;
+  width: 93%;
 }
 .medical-course-price-flex sup {
   top: -6px;
@@ -23031,6 +23051,7 @@ section:has(.photo-gallery-slider) {
 
 .medical-course-price-vat {
   font-size: 13px;
+  width: 93%;
 }
 
 .medical-course-who {
@@ -23038,6 +23059,8 @@ section:has(.photo-gallery-slider) {
   display: flex;
   gap: 25px;
   font-size: 14px;
+  width: 93%;
+  margin-bottom: 10px;
 }
 
 .medical-course-who-title {
@@ -23051,6 +23074,7 @@ section:has(.photo-gallery-slider) {
 
 .medical-course-who-text {
   margin-bottom: 0;
+  line-height: 1.3;
 }
 
 .medical-course-cta {
@@ -23063,6 +23087,24 @@ section:has(.photo-gallery-slider) {
   color: #fff;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+.medical-course-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #1f9bb8 0%, #1f9bb8 50%, #5273b7 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.medical-course-cta:hover::before, .medical-course-cta:focus::before {
+  opacity: 1;
 }
 .medical-course-cta-inner {
   width: 50%;
@@ -23071,10 +23113,78 @@ section:has(.photo-gallery-slider) {
   font-size: 36px;
   font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+.medical-course-cta-inner.inactive-points {
+  color: rgba(255, 255, 255, 0.3);
+}
+.medical-course-cta-inner:last-child {
+  position: relative;
+}
+.medical-course-cta-inner:last-child::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0;
 }
 .medical-course-cta-inner span {
   font-size: 16px;
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.medical-course-badge {
+  border-bottom-left-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 35px;
+  height: 150px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.medical-course-badge span {
+  transform: rotate(-90deg) translateX(-25px);
+  white-space: nowrap;
+}
+.medical-course-badge-pink {
+  background-color: #c6386b;
+}
+.medical-course-badge-green {
+  background-color: #5eb461;
+}
+.medical-course-badge-yellow {
+  background-color: #f9be13;
+}
+
+@media (max-width: 83.75rem) {
+  .medical-course-image {
+    display: none;
+  }
+}
+@media (max-width: 80rem) {
+  .medical-course-image {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .medical-course-image {
+    display: none;
+  }
 }
 
 .footer {
