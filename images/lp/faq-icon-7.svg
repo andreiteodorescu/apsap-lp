@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.5 46.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1f9bb8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="LANDING-MED">
+    <g id="PAGE">
+      <line class="cls-1" x1="17.91" y1="33.2" x2="21.49" y2="36.82"/>
+      <ellipse class="cls-1" cx="15.85" cy="31.2" rx="5.6" ry="5.66"/>
+      <path class="cls-1" d="M15.87,16.66h0c-7.95,0-14.39,6.51-14.39,14.55h0c0,2.41.58,4.69,1.61,6.69l-2.34,5.92,6.83-.72c2.34,1.67,5.2,2.66,8.29,2.66h0c7.95,0,14.39-6.51,14.39-14.55h0c0-8.03-6.44-14.55-14.39-14.55Z"/>
+      <path class="cls-1" d="M35.68,21.54l-4.47-11.75c-.09-.21-.38-.21-.47,0l-4.17,11.16"/>
+      <line class="cls-1" x1="34.87" y1="19.63" x2="27.2" y2="19.63"/>
+      <path class="cls-1" d="M30.37,29.84c.09,0,.17,0,.26,0h0c3.09,0,5.95-.98,8.29-2.66l6.83.72-2.16-5.46"/>
+      <path class="cls-1" d="M44.76,12.53c-1.28-6.71-7.12-11.78-14.13-11.78h0c-7.95,0-14.39,6.51-14.39,14.55h0c0,.43.02.86.06,1.29"/>
+    </g>
+  </g>
+</svg>

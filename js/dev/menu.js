@@ -111,3 +111,7 @@ function initMegaMenu() {
 $(document).ready(function () {
   initMegaMenu();
 });
+
+$(document).on("hide.bs.dropdown", ".header", function () {
+  $("body").removeClass("nav-active");
+});

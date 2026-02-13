@@ -314,6 +314,9 @@ function initMegaMenu() {
 $(document).ready(function () {
   initMegaMenu();
 });
+$(document).on("hide.bs.dropdown", ".header", function () {
+  $("body").removeClass("nav-active");
+});
 "use strict";
 
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -1169,5 +1172,23 @@ var packagesSlider = new Swiper("#packagesSlider", {
   mousewheel: {
     forceToAxis: true,
     sensitivity: 1
+  }
+});
+var medicalCoursesOverflowSlider = new Swiper("#medicalCoursesOverflowSlider", {
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15
+    },
+    768: {
+      slidesPerView: "auto"
+    }
   }
 });

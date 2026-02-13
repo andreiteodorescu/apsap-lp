@@ -283,3 +283,39 @@
     display: none;
   }
 }
+
+section:has(.medical-course-slider) {
+  overflow-x: clip;
+}
+
+.medical-course-slider {
+  overflow: visible;
+
+  @media (min-width: 1600px) {
+    margin-left: calc((100vw - 1600px) / 2);
+  }
+
+  @media (max-width: 1599px) {
+    margin-left: 15px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-right: 15px;
+  }
+
+  .swiper-slide {
+    width: 790px;
+
+    @include media-breakpoint-down(md) {
+      width: calc(100vw - 30px);
+    }
+  }
+
+  .swiper-wrapper {
+    padding-right: 15px;
+  }
+
+  .medical-courses-item {
+    width: 100%;
+  }
+}

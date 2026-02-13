@@ -311,6 +311,17 @@ body {
       display: none;
     }
   }
+
+  &-gradient {
+    &::before {
+      background: linear-gradient(
+        to right,
+        #3399cc 0%,
+        #273266 50%,
+        #3399cc 100%
+      );
+    }
+  }
 }
 
 .grey-header-cut {
@@ -558,6 +569,10 @@ body {
   padding: 50px 0;
   margin-top: 90px;
 
+  &-padding {
+    padding: 100px 0;
+  }
+
   &-arrow {
     position: relative;
 
@@ -622,6 +637,45 @@ body {
   }
 }
 
+.component-light-blue-diamonds {
+  background-image:
+    url(../images/diamonds-bg.svg),
+    linear-gradient(to bottom, #1f9bb8 0%, #252525 100%);
+  background-position:
+    center top,
+    center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size:
+    auto,
+    100% 100%;
+  padding: 200px 0;
+
+  @include media-breakpoint-down(xl) {
+    padding: 100px 0;
+
+    background-size:
+      rem(1920px) rem(1040px),
+      100% 100%;
+  }
+
+  &-arrow {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 25px solid #252525;
+    }
+  }
+}
+
 .thank-you-header {
   margin-bottom: 50px;
 
@@ -652,4 +706,9 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 1600px auto;
+
+  &-offset {
+    padding-top: 300px;
+    margin-top: -200px;
+  }
 }

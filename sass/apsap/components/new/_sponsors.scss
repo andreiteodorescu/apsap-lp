@@ -40,5 +40,14 @@
         row-gap: 30px;
       }
     }
+
+    &-presentation-images {
+      display: flex;
+
+      img {
+        min-width: 0;
+        flex: 1;
+      }
+    }
   }
 }

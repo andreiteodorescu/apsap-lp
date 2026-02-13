@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.5 47.24">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #1f9bb8;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 13.33;
+      }
+    </style>
+  </defs>
+  <g id="LANDING-MED">
+    <g id="PAGE">
+      <path id="path327" class="cls-2" d="M15.62,22.21v-3.07c0-1.36.62-2.71,1.77-3.34,1.21-.67,2.04-1.99,2.04-3.52,0-2.19-1.71-3.97-3.81-3.97s-3.81,1.78-3.81,3.97"/>
+      <path id="path331" class="cls-1" d="M16.62,28.17c0,.58-.45,1.04-1,1.04s-1-.47-1-1.04.45-1.04,1-1.04,1,.47,1,1.04"/>
+      <path id="path335" class="cls-2" d="M30.5,10.29v-5.56c0-2.19-1.71-3.97-3.81-3.97H4.56C2.46.75.75,2.53.75,4.72v27.42c0,2.19,1.71,3.97,3.81,3.97h0v6.71l7.63-6.71h8.77"/>
+      <path id="path339" class="cls-2" d="M32.4,24.19h7.63"/>
+      <path id="path343" class="cls-2" d="M32.4,32.14h7.63"/>
+      <path id="path347" class="cls-2" d="M41.94,16.25c2.11,0,3.81,1.78,3.81,3.97v15.89c0,2.19-1.71,3.97-3.81,3.97v5.66l-7.63-5.66h-3.81c-2.11,0-3.81-1.78-3.81-3.97v-15.89c0-2.19,1.71-3.97,3.81-3.97h11.44Z"/>
+    </g>
+  </g>
+</svg>

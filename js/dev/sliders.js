@@ -297,3 +297,25 @@ const packagesSlider = new Swiper("#packagesSlider", {
     sensitivity: 1,
   },
 });
+
+const medicalCoursesOverflowSlider = new Swiper(
+  "#medicalCoursesOverflowSlider",
+  {
+    slidesPerView: "auto",
+    spaceBetween: 15,
+    grabCursor: true,
+    mousewheel: {
+      forceToAxis: true,
+      sensitivity: 1,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: "auto",
+      },
+    },
+  },
+);

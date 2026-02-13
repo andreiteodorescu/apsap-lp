@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.5 46.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1f9bb8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="LANDING-MED">
+    <g id="PAGE">
+      <path id="path2919" class="cls-1" d="M15.78,15.75C7.53,15.75.75,22.47.75,30.75c0,2.46.59,4.77,1.63,6.82l-1.63,8.18,8.24-1.64c2.04,1.05,4.35,1.64,6.79,1.64,8.25,0,14.94-6.72,14.94-15"/>
+      <path id="path2923" class="cls-1" d="M15.78,15.75c0,8.28,6.69,15,14.94,15,2.45,0,4.75-.59,6.79-1.64l8.24,1.64-1.63-8.18c1.04-2.05,1.63-4.36,1.63-6.82,0-8.28-6.78-15-15.03-15s-14.94,6.72-14.94,15Z"/>
+      <path id="path2927" class="cls-1" d="M27.73,11.99c0-1.67,1.37-3.02,3.04-2.99,1.55.03,2.83,1.28,2.91,2.83.09,1.72-1.28,3.15-2.96,3.15v3.02"/>
+      <path id="path2931" class="cls-1" d="M30.72,22.5h0"/>
+      <path id="path2935" class="cls-1" d="M10.55,33.75h10.46"/>
+      <path id="path2939" class="cls-1" d="M24.12,27.75h-15.93"/>
+    </g>
+  </g>
+</svg>

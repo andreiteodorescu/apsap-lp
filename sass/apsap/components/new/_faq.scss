@@ -1,0 +1,109 @@
+.faq {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #fff 0%, rgba(89, 122, 151, 0.3) 100%);
+
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 50px;
+
+    @include media-breakpoint-down(xl) {
+      row-gap: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &-item {
+      width: calc(33.333% - 20px);
+      text-align: left;
+
+      @include media-breakpoint-down(xl) {
+        width: calc(50% - 15px);
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      &:nth-child(4) {
+        margin-top: -160px;
+
+        @media (max-width: rem(1500px)) {
+          margin-top: -130px;
+        }
+
+        @media (max-width: rem(1250px)) {
+          margin-top: -100px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(6) {
+        margin-top: -180px;
+
+        @media (max-width: rem(1500px)) {
+          margin-top: -150px;
+        }
+
+        @media (max-width: rem(1350px)) {
+          margin-top: -120px;
+        }
+
+        @media (max-width: rem(1250px)) {
+          margin-top: -100px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(8) {
+        margin-top: -70px;
+
+        @media (max-width: rem(1500px)) {
+          margin-top: -60px;
+        }
+
+        @media (max-width: rem(1350px)) {
+          margin-top: -50px;
+        }
+
+        @media (max-width: rem(1250px)) {
+          margin-top: -70px;
+        }
+
+        @include media-breakpoint-down(xl) {
+          margin-top: 0;
+        }
+      }
+
+      &-title {
+        font-size: 32px;
+        font-family: $font-family-medium;
+        margin-bottom: 15px;
+
+        span {
+          font-family: $font-family-extrabold;
+        }
+      }
+
+      &-presentation-image {
+        @include media-breakpoint-down(xl) {
+          display: none;
+        }
+
+        @include media-breakpoint-down(md) {
+          display: block;
+        }
+      }
+    }
+  }
+}

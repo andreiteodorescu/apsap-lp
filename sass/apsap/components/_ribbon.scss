@@ -1,142 +1,147 @@
 .ribbon {
+  position: relative;
+  background-color: $blue-violet;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &-yellow {
+    background-color: $yellow;
+  }
+
+  &-grey {
+    background-color: $grey-extralight-2;
+  }
+
+  &-grey-dark {
+    background-color: $grey-dark-4;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-blue-light {
+    background-color: $blue-light;
+  }
+
+  &-blue-medium {
+    background-color: $new-blue;
+  }
+
+  &-icon {
+    fill: #fff;
+    z-index: 1;
     position: relative;
-    background-color: $blue-violet;
-    width: rem(100px);
-    height: rem(100px);
+    display: block;
+
+    &-book {
+      width: rem(53px);
+      height: rem(42px);
+    }
+
+    &-medal {
+      width: rem(40px);
+      height: rem(54px);
+    }
+
+    &-reviews {
+      width: rem(44px);
+      height: rem(50px);
+    }
+
+    &-location {
+      width: rem(45px);
+      height: rem(45px);
+    }
+
+    &-theme {
+      width: rem(48px);
+      height: rem(45px);
+      margin-top: 4px;
+    }
+
+    &-benefits {
+      width: rem(42px);
+      height: rem(45px);
+    }
+
+    &-achievements {
+      width: rem(44px);
+      height: rem(45px);
+    }
+
+    &-video {
+      width: rem(49px);
+      height: rem(47px);
+    }
+
+    &-info {
+      width: rem(47px);
+      height: rem(47px);
+    }
+
+    &-tech {
+      width: rem(44px);
+      height: rem(47px);
+    }
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: inherit;
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  }
 
-    &-yellow {
-        background-color: $yellow;
-    }
+  &::after {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    width: rem(60px);
+    height: rem(60px);
+    margin-top: rem(-30px);
+    transition: all 0.6s ease-in-out;
+    right: -50px;
+    right: rem(-50px);
+  }
 
-    &-grey {
-        background-color: $grey-extralight-2;
-    }
+  &::before {
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    width: rem(44px);
+    height: rem(44px);
+    margin-top: rem(-22px);
+    transition: all 0.6s ease-in-out;
+    left: -50px;
+    left: rem(-50px);
+  }
 
-    &-grey-dark {
-        background-color: $grey-dark-4;
-    }
-
-    &-orange {
-        background-color: $orange;
-    }
-
-    &-blue-light {
-        background-color: $blue-light;
-    }
-
-    &-icon {
-        fill: #fff;
-        z-index: 1;
-        position: relative;
-        display: block;
-
-        &-book {
-            width: rem(53px);
-            height: rem(42px);
-        }
-
-        &-medal {
-            width: rem(40px);
-            height: rem(54px);
-        }
-
-        &-reviews {
-            width: rem(44px);
-            height: rem(50px);
-        }
-
-        &-location {
-            width: rem(45px);
-            height: rem(45px);
-        }
-
-        &-theme {
-            width: rem(48px);
-            height: rem(45px);
-            margin-top: 4px;
-        }
-
-        &-benefits {
-            width: rem(42px);
-            height: rem(45px);
-        }
-
-        &-achievements {
-            width: rem(44px);
-            height: rem(45px);
-        }
-
-        &-video {
-            width: rem(49px);
-            height: rem(47px);
-        }
-
-        &-info {
-            width: rem(47px);
-            height: rem(47px);
-        }
-
-        &-tech {
-            width: rem(44px);
-            height: rem(47px);
-        }
-    }
-
-    &::after, &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        background-color: inherit;
-        border-radius: 50%;
-    }
-
+  &.observe {
     &::after {
-        width: 60px;
-        height: 60px;
-        margin-top: -30px;
-        width: rem(60px);
-        height: rem(60px);
-        margin-top: rem(-30px);
-        transition: all .6s ease-in-out;
-        right: -50px;
-        right: rem(-50px);
+      right: 0;
     }
 
     &::before {
-        width: 44px;
-        height: 44px;
-        margin-top: -22px;
-        width: rem(44px);
-        height: rem(44px);
-        margin-top: rem(-22px);
-        transition: all .6s ease-in-out;
+      left: 0;
+    }
+
+    &.in-view {
+      &::after {
+        right: -50px;
+        right: rem(-50px);
+      }
+
+      &::before {
         left: -50px;
         left: rem(-50px);
+      }
     }
-
-    &.observe {
-        &::after {
-            right: 0;
-        }
-
-        &::before {
-            left: 0;
-        }
-
-        &.in-view {
-            &::after {
-                right: -50px;
-                right: rem(-50px);
-            }
-    
-            &::before {
-                left: -50px;
-                left: rem(-50px);
-            }
-        }
-    }
+  }
 }

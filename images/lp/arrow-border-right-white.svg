@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" x="0" y="0" width="20" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1"/>
+      <feGaussianBlur result="blur" stdDeviation=".5"/>
+      <feFlood flood-color="#000" flood-opacity=".15"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="LANDING-MED">
+    <g id="PAGE">
+      <g id="EV._URMATOARE_wide" data-name="EV. URMATOARE_wide">
+        <g id="nav">
+          <path class="cls-1" d="M4.36,27c.44,0,.89-.17,1.22-.51l10.78-10.85c.32-.32.5-.76.5-1.22,0-.46-.18-.9-.51-1.22L5.58,2.5c-.68-.67-1.77-.67-2.44,0-.67.68-.67,1.77,0,2.44l9.55,9.49L3.14,24.06c-.67.68-.67,1.77,0,2.44.34.33.78.5,1.21.5Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
