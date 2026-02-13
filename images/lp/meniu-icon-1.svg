@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.11 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f9bb8;
+      }
+    </style>
+  </defs>
+  <g id="MENU-MED">
+    <path class="cls-1" d="M0,10.12v9.88h2.09c1.91,0,3.46-1.55,3.46-3.46v-7.65H1.23c-.68,0-1.23.55-1.23,1.23Z"/>
+    <path class="cls-1" d="M7.78,5.67v14.33h2.09c1.91,0,3.46-1.55,3.46-3.46V4.44h-4.33c-.68,0-1.23.55-1.23,1.23Z"/>
+    <path class="cls-1" d="M15.56,1.23v18.77h2.09c1.91,0,3.46-1.55,3.46-3.46V0h-4.33c-.68,0-1.23.55-1.23,1.23Z"/>
+  </g>
+</svg>

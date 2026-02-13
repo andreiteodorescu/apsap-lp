@@ -254,6 +254,32 @@
     > .list-group-item:last-child {
       border-bottom: rem(1px) solid rgba(207, 207, 206, 0.2);
     }
+
+    &-icon {
+      .list-group-item {
+        border: none;
+
+        &:last-child {
+          border: none;
+        }
+
+        .main-submenu-list-link {
+          display: flex;
+          gap: 15px;
+        }
+      }
+
+      .list-group-item-icon {
+        flex-shrink: 0;
+      }
+
+      .list-group-item-text {
+        margin-top: 2px;
+        flex: 1;
+        border-bottom: 1px solid rgba(207, 207, 206, 0.2);
+        padding-bottom: 5px;
+      }
+    }
   }
 
   &-second-level {

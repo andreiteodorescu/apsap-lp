@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.6 24.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1f9bb8;
+        stroke-linecap: round;
+        stroke-miterlimit: 13.33;
+        stroke-width: .6px;
+      }
+    </style>
+  </defs>
+  <g id="MENU-MED">
+    <path id="path15528" class="cls-1" d="M.3,21.37c0-1.69,1.37-3.07,3.07-3.07h13.86c1.69,0,3.07-1.37,3.07-3.07V3.37c0-1.69-1.37-3.07-3.07-3.07H3.37C1.67.3.3,1.67.3,3.37v18.01c0,1.69,1.37,3.07,3.07,3.07h13.86c1.69,0,3.07-1.37,3.07-3.07"/>
+    <path id="path15532" class="cls-1" d="M6.54,12.78v-.51c0-.46.2-.91.54-1.21.59-.52,1.65-1.19,3.24-1.19s2.66.68,3.24,1.19c.35.31.54.75.54,1.21v.51"/>
+    <path id="path15536" class="cls-1" d="M8.33,7.82c0-1.13.92-2.05,2.05-2.05s2.05.92,2.05,2.05-.92,2.05-2.05,2.05-2.05-.92-2.05-2.05Z"/>
+  </g>
+</svg>

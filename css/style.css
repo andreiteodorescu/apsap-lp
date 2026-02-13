@@ -13959,6 +13959,25 @@ strong {
 .main-submenu-list > .list-group-item:last-child {
   border-bottom: 0.0625rem solid rgba(207, 207, 206, 0.2);
 }
+.main-submenu-list-icon .list-group-item {
+  border: none;
+}
+.main-submenu-list-icon .list-group-item:last-child {
+  border: none;
+}
+.main-submenu-list-icon .list-group-item .main-submenu-list-link {
+  display: flex;
+  gap: 15px;
+}
+.main-submenu-list-icon .list-group-item-icon {
+  flex-shrink: 0;
+}
+.main-submenu-list-icon .list-group-item-text {
+  margin-top: 2px;
+  flex: 1;
+  border-bottom: 1px solid rgba(207, 207, 206, 0.2);
+  padding-bottom: 5px;
+}
 .main-submenu-second-level {
   position: relative;
 }
