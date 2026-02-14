@@ -715,3 +715,16 @@
     }
   }
 }
+
+.main-submenu-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .btn-pill-new {
+    min-width: 290px;
+  }
+}

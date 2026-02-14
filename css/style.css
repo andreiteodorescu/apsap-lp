@@ -13587,6 +13587,18 @@ strong {
   background-color: #b5b5b5 !important;
   color: #fff !important;
 }
+.btn-pill-new-text-dark {
+  color: #101228 !important;
+}
+.btn-pill-new-text-dark:active, .btn-pill-new-text-dark:hover, .btn-pill-new-text-dark:first-child:active, .btn-pill-new-text-dark:focus-visible {
+  color: #101228 !important;
+}
+.btn-pill-new-grey {
+  background-color: #ababab;
+}
+.btn-pill-new-grey:active, .btn-pill-new-grey:hover, .btn-pill-new-grey:first-child:active, .btn-pill-new-grey:focus-visible {
+  background-color: #d2d2d2 !important;
+}
 .btn-pill-new-stage-1 {
   background-color: #5eb461;
 }
@@ -14302,6 +14314,18 @@ body:not(.nav-active) .header-sticky .menu-btn-text {
   .megamenu-center {
     display: none;
   }
+}
+
+.main-submenu-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.main-submenu-ctas .btn-pill-new {
+  min-width: 290px;
 }
 
 .search-toggler {
