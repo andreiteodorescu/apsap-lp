@@ -1,0 +1,49 @@
+.course-layout-normal {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+  }
+
+  &-left {
+    width: calc(67% - 15px);
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+    }
+  }
+
+  &-right {
+    flex: 1;
+
+    @include media-breakpoint-down(xl) {
+      order: -1;
+    }
+  }
+}
+
+.course-med-info-prices {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  .info-console-bill-header-price-main {
+    color: $new-blue;
+  }
+}
+
+.info-console-bill-header-price-slashed {
+  font-size: 32px;
+  color: $grey-medium-2;
+  text-decoration: line-through;
+
+  sup {
+    font-size: 21px;
+  }
+
+  @media (max-width: rem(1300px)) {
+    font-size: rem(31px);
+  }
+}

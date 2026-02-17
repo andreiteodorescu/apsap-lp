@@ -225,3 +225,11 @@ strong {
     font-size: rem(13px);
   }
 }
+
+.middle-title {
+  font-family: $font-family-bebas-regular;
+  font-size: rem(55px);
+  color: $blue-main;
+  line-height: 1;
+  margin-bottom: 0;
+}

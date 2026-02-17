@@ -5,6 +5,15 @@
   padding: rem(11px) rem(20px) rem(9px);
 }
 
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right rem(15px) center;
+  background-size: rem(20px);
+  padding-right: rem(45px);
+}
+
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext {
   padding: rem(18px) rem(20px) rem(17px);

@@ -185,6 +185,19 @@
     }
   }
 
+  &-blue {
+    background-color: $blue-violet;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $blue-bonus !important;
+      color: #fff !important;
+    }
+  }
+
   &-grey {
     background-color: $grey-medium-2;
 
@@ -193,6 +206,17 @@
     &:first-child:active,
     &:focus-visible {
       background-color: $grey-medium-3 !important;
+    }
+  }
+
+  &-grey-light {
+    background-color: $grey-medium-3;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $grey-medium-2 !important;
     }
   }
 

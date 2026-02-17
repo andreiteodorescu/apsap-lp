@@ -1,0 +1,81 @@
+.medics-types {
+  &-title {
+    font-size: 21px;
+    font-family: $font-family-bold;
+    margin-bottom: 5px;
+    color: $blue-violet;
+  }
+
+  &-prices {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-size: 50px;
+    font-family: $font-family-extrabold;
+    line-height: 1;
+    color: $blue-violet;
+
+    sup {
+      font-size: 26px;
+      top: -16px;
+    }
+
+    &-full {
+      font-family: $font-family-bold;
+      color: $grey-medium-2;
+    }
+  }
+
+  &-info {
+    font-size: 21px;
+
+    span {
+      font-family: $font-family-extrabold;
+    }
+  }
+
+  &-text {
+    margin-top: 5px;
+  }
+
+  &-select {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    .btn-pill-new {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      text-transform: none;
+      min-width: 215px;
+      justify-content: flex-start;
+
+      @include media-breakpoint-down(md) {
+        min-width: 0;
+        width: calc(33% - 2px);
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: calc(50% - 5px);
+      }
+
+      img {
+        width: 32px;
+
+        @media (max-width: rem(450px)) {
+          width: 20px;
+        }
+      }
+
+      div {
+        text-align: left;
+
+        span {
+          display: block;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

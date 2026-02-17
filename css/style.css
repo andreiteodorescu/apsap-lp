@@ -13448,6 +13448,14 @@ strong {
     font-size: 0.8125rem;
   }
 }
+.middle-title {
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 3.4375rem;
+  color: #273266;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
 .btns-align .btn {
   margin: 0.3125rem 0.4375rem;
 }
@@ -13593,11 +13601,25 @@ strong {
 .btn-pill-new-text-dark:active, .btn-pill-new-text-dark:hover, .btn-pill-new-text-dark:first-child:active, .btn-pill-new-text-dark:focus-visible {
   color: #101228 !important;
 }
+.btn-pill-new-blue {
+  background-color: #203d74;
+  color: #fff;
+}
+.btn-pill-new-blue:active, .btn-pill-new-blue:hover, .btn-pill-new-blue:first-child:active, .btn-pill-new-blue:focus-visible {
+  background-color: #1d66af !important;
+  color: #fff !important;
+}
 .btn-pill-new-grey {
   background-color: #ababab;
 }
 .btn-pill-new-grey:active, .btn-pill-new-grey:hover, .btn-pill-new-grey:first-child:active, .btn-pill-new-grey:focus-visible {
   background-color: #d2d2d2 !important;
+}
+.btn-pill-new-grey-light {
+  background-color: #d2d2d2;
+}
+.btn-pill-new-grey-light:active, .btn-pill-new-grey-light:hover, .btn-pill-new-grey-light:first-child:active, .btn-pill-new-grey-light:focus-visible {
+  background-color: #ababab !important;
 }
 .btn-pill-new-stage-1 {
   background-color: #5eb461;
@@ -13650,6 +13672,15 @@ strong {
   border: none;
   box-shadow: 0 0.1875rem 0.125rem rgba(0, 0, 0, 0.2);
   padding: 0.6875rem 1.25rem 0.5625rem;
+}
+
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9375rem center;
+  background-size: 1.25rem;
+  padding-right: 2.8125rem;
 }
 
 .form-floating > .form-control,
@@ -23505,6 +23536,190 @@ section:has(.medical-course-slider) {
   .faq-grid-item-presentation-image {
     display: block;
   }
+}
+
+.course-layout-normal {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1199.98px) {
+  .course-layout-normal {
+    flex-direction: column;
+  }
+}
+.course-layout-normal-left {
+  width: calc(67% - 15px);
+}
+@media (max-width: 1199.98px) {
+  .course-layout-normal-left {
+    width: 100%;
+  }
+}
+.course-layout-normal-right {
+  flex: 1;
+}
+@media (max-width: 1199.98px) {
+  .course-layout-normal-right {
+    order: -1;
+  }
+}
+
+.course-med-info-prices {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.course-med-info-prices .info-console-bill-header-price-main {
+  color: #238eab;
+}
+
+.info-console-bill-header-price-slashed {
+  font-size: 32px;
+  color: #ababab;
+  text-decoration: line-through;
+}
+.info-console-bill-header-price-slashed sup {
+  font-size: 21px;
+}
+@media (max-width: 81.25rem) {
+  .info-console-bill-header-price-slashed {
+    font-size: 1.9375rem;
+  }
+}
+
+.course-med-hero-ctas {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+@media (max-width: 575.98px) {
+  .course-med-hero-ctas {
+    flex-direction: column;
+  }
+}
+.course-med-hero-ctas > * {
+  width: 50%;
+}
+@media (max-width: 575.98px) {
+  .course-med-hero-ctas > * {
+    width: 100%;
+  }
+}
+
+.medics-types-title {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+  color: #203d74;
+}
+.medics-types-prices {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 50px;
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+  line-height: 1;
+  color: #203d74;
+}
+.medics-types-prices sup {
+  font-size: 26px;
+  top: -16px;
+}
+.medics-types-prices-full {
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  color: #ababab;
+}
+.medics-types-info {
+  font-size: 21px;
+}
+.medics-types-info span {
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.medics-types-text {
+  margin-top: 5px;
+}
+.medics-types-select {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.medics-types-select .btn-pill-new {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-transform: none;
+  min-width: 215px;
+  justify-content: flex-start;
+}
+@media (max-width: 767.98px) {
+  .medics-types-select .btn-pill-new {
+    min-width: 0;
+    width: calc(33% - 2px);
+  }
+}
+@media (max-width: 575.98px) {
+  .medics-types-select .btn-pill-new {
+    width: calc(50% - 5px);
+  }
+}
+.medics-types-select .btn-pill-new img {
+  width: 32px;
+}
+@media (max-width: 28.125rem) {
+  .medics-types-select .btn-pill-new img {
+    width: 20px;
+  }
+}
+.medics-types-select .btn-pill-new div {
+  text-align: left;
+}
+.medics-types-select .btn-pill-new div span {
+  display: block;
+  text-transform: uppercase;
+}
+
+.program-course-title {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.program-course-scroll {
+  overflow: auto;
+  line-height: 1.2;
+  max-height: 900px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.program-course-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.program-course-scroll::-webkit-scrollbar-track {
+  background-color: #87898c;
+  border-radius: 6px;
+}
+.program-course-scroll::-webkit-scrollbar-thumb {
+  background-color: #d0d1d2;
+  border-radius: 6px;
+}
+.program-course-scroll {
+  scrollbar-color: #87898c;
+}
+.program-course-scroll-item-hours {
+  font-size: 24px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.program-course-scroll-item-title {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  color: #203d74;
+}
+.program-course-scroll-item-lectors {
+  margin-top: 5px;
 }
 
 .footer {
