@@ -568,6 +568,7 @@ body {
   color: #fff;
   padding: 50px 0;
   margin-top: 90px;
+  position: relative;
 
   &-desk {
     background-image: url(../images/lp/back-desk.png);
@@ -575,6 +576,10 @@ body {
 
   &-padding {
     padding: 100px 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 60px 0;
+    }
   }
 
   &-arrow {
@@ -715,4 +720,12 @@ body {
     padding-top: 300px;
     margin-top: -200px;
   }
+}
+
+.rainbow-absolute {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
 }

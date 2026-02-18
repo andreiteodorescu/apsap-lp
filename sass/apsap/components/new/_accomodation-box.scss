@@ -1,0 +1,167 @@
+.accomodation-box {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  position: relative;
+
+  .package-cta {
+    background-color: $pink;
+    font-size: 16px;
+    height: 35px;
+
+    &-wrap::before {
+      border-bottom-color: $pink;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    display: block;
+  }
+
+  &-content {
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &-inner {
+      display: flex;
+      gap: 10px;
+      padding: 17px 15px;
+
+      .card-info-bottom {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
+
+        &-half-tag {
+          background-color: $pink;
+        }
+
+        &-half-left {
+          flex-basis: 65%;
+          background-color: transparent;
+        }
+
+        &-half-right {
+          flex: 1;
+        }
+      }
+    }
+
+    &-left {
+      flex-basis: 65%;
+    }
+
+    &-right {
+      flex: 1;
+    }
+  }
+}
+
+.acc-box-title-1 {
+  font-size: 11px;
+  font-family: $font-family-medium;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.acc-box-title-2 {
+  font-size: 16px;
+  font-family: $font-family-bold;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.acc-box-desc {
+  font-size: 11px;
+  font-family: $font-family-medium;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.acc-box-info-title-1 {
+  font-size: 11px;
+  font-family: $font-family-bold;
+  margin-bottom: 10px;
+
+  span {
+    font-family: $font-family-base;
+  }
+}
+
+.acc-box-info-title-2 {
+  font-size: 11px;
+  font-family: $font-family-bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.acc-amenities {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  &-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+
+    &:nth-child(2) {
+      &::before,
+      &::after {
+        content: "";
+        height: 50px;
+        width: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+      }
+
+      &::before {
+        left: -9px;
+      }
+
+      &::after {
+        right: -9px;
+      }
+    }
+
+    &-title {
+      font-size: 11px;
+      font-family: $font-family-extrabold;
+      margin-top: 5px;
+      line-height: 1.3;
+      text-transform: uppercase;
+
+      span {
+        font-family: $font-family-base;
+        display: block;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.gap-custom {
+  gap: 100px;
+
+  @include media-breakpoint-up(xxl) {
+    gap: 0;
+  }
+}
+
+.gap-custom-2 {
+  gap: 70px;
+
+  @include media-breakpoint-up(md) {
+    gap: 0;
+  }
+}
