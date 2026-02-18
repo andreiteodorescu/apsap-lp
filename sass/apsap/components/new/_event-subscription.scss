@@ -1,0 +1,90 @@
+.event-subscription {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+
+  @media (max-width: rem(1300px)) {
+    flex-direction: column;
+  }
+
+  &-left {
+    width: 55%;
+
+    @media (max-width: rem(1300px)) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-right {
+    flex: 1;
+
+    .footer-form {
+      background-color: $grey-medium-3;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .form-check {
+        color: #000;
+      }
+
+      .btn-pill {
+        background-color: $pink;
+
+        &:active,
+        &:hover,
+        &:first-child:active,
+        &:focus-visible {
+          background-color: $pink-hover !important;
+        }
+      }
+    }
+  }
+
+  &-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 345px;
+    margin-bottom: 25px;
+
+    @media (max-width: rem(1300px)) {
+      max-width: none;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      border-top: 1px dotted #000;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+  }
+
+  &-step {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &-2 {
+      background-color: $new-green;
+    }
+
+    &-3 {
+      background-color: $pink;
+    }
+  }
+}
+
+.event-subscription-steps-subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}

@@ -30,6 +30,10 @@
         text-transform: uppercase;
         margin-bottom: 20px;
 
+        &-blue {
+          color: $new-blue;
+        }
+
         @include media-breakpoint-down(xl) {
           font-size: 26px;
         }

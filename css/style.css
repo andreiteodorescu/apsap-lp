@@ -13143,6 +13143,9 @@ body {
   padding: 50px 0;
   margin-top: 90px;
 }
+.hologram-backface-desk {
+  background-image: url(../images/lp/back-desk.png);
+}
 .hologram-backface-padding {
   padding: 100px 0;
 }
@@ -20850,7 +20853,6 @@ a.presentation-ribbon-blue:hover {
 .hero-event {
   display: flex;
   min-height: 415px;
-  margin-top: -37px;
 }
 @media (max-width: 991.98px) {
   .hero-event {
@@ -21229,37 +21231,54 @@ a.presentation-ribbon-blue:hover {
     flex-direction: column;
   }
 }
-.events-details-description {
+.events-details-description, .events-details-left {
   width: 48%;
   max-height: 240px;
   overflow: auto;
   padding-right: 10px;
 }
-.events-details-description::-webkit-scrollbar {
+.events-details-description::-webkit-scrollbar, .events-details-left::-webkit-scrollbar {
   width: 4px;
 }
-.events-details-description::-webkit-scrollbar-track {
+.events-details-description::-webkit-scrollbar-track, .events-details-left::-webkit-scrollbar-track {
   background-color: #87898c;
   border-radius: 6px;
 }
-.events-details-description::-webkit-scrollbar-thumb {
+.events-details-description::-webkit-scrollbar-thumb, .events-details-left::-webkit-scrollbar-thumb {
   background-color: #d0d1d2;
   border-radius: 6px;
 }
-.events-details-description {
+.events-details-description, .events-details-left {
   scrollbar-color: #87898c;
 }
 @media (max-width: 767.98px) {
-  .events-details-description {
+  .events-details-description, .events-details-left {
     width: 100%;
     order: 1;
   }
+}
+.events-details-left {
+  width: 48%;
+  overflow: visible;
+  max-height: none;
+  padding-right: 0;
+}
+@media (max-width: 767.98px) {
+  .events-details-left {
+    width: 100%;
+  }
+}
+.events-details-left .events-details-description {
+  width: 100%;
+}
+.events-details-left .formatori-info-slider {
+  margin-left: 0;
+  overflow: hidden;
 }
 .events-details-right {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 15px;
   padding-left: 40px;
 }
@@ -21285,7 +21304,6 @@ a.presentation-ribbon-blue:hover {
   line-height: 1;
   margin: 0;
   font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
-  margin-bottom: auto;
 }
 .events-details-tagline span {
   display: block;
@@ -21763,6 +21781,9 @@ section:has(.agenda-info-slider) {
   color: #5eb461;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.info-scroll-half-content-title-blue {
+  color: #238eab;
 }
 @media (max-width: 1199.98px) {
   .info-scroll-half-content-title {
@@ -22954,15 +22975,31 @@ section:has(.photo-gallery-slider) {
   padding-right: 15px;
 }
 
+.info-module-3-row {
+  display: flex;
+  gap: 15px;
+}
+
 .info-module-3 {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-
-.info-module-3-row {
-  display: flex;
-  gap: 15px;
+.info-module-3-side {
+  flex-direction: row;
+}
+@media (max-width: 1199.98px) {
+  .info-module-3-side {
+    flex-direction: column;
+  }
+}
+.info-module-3-side .info-module-3-row {
+  width: calc(50% - 20px);
+}
+@media (max-width: 1199.98px) {
+  .info-module-3-side .info-module-3-row {
+    width: 100%;
+  }
 }
 
 .info-module-3-title {
@@ -23720,6 +23757,96 @@ section:has(.medical-course-slider) {
 }
 .program-course-scroll-item-lectors {
   margin-top: 5px;
+}
+
+.event-subscription {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 81.25rem) {
+  .event-subscription {
+    flex-direction: column;
+  }
+}
+.event-subscription-left {
+  width: 55%;
+}
+@media (max-width: 81.25rem) {
+  .event-subscription-left {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.event-subscription-right {
+  flex: 1;
+}
+.event-subscription-right .footer-form {
+  background-color: #d2d2d2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.event-subscription-right .footer-form .form-check {
+  color: #000;
+}
+.event-subscription-right .footer-form .btn-pill {
+  background-color: #c6386b;
+}
+.event-subscription-right .footer-form .btn-pill:active, .event-subscription-right .footer-form .btn-pill:hover, .event-subscription-right .footer-form .btn-pill:first-child:active, .event-subscription-right .footer-form .btn-pill:focus-visible {
+  background-color: #dc5283 !important;
+}
+.event-subscription-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 345px;
+  margin-bottom: 25px;
+}
+@media (max-width: 81.25rem) {
+  .event-subscription-steps {
+    max-width: none;
+  }
+}
+.event-subscription-steps::before {
+  content: "";
+  width: 100%;
+  border-top: 1px dotted #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.event-subscription-step {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #f9be13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.event-subscription-step-2 {
+  background-color: #5eb461;
+}
+.event-subscription-step-3 {
+  background-color: #c6386b;
+}
+
+.event-subscription-steps-subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.event-attendees-list {
+  margin-bottom: 0;
+}
+.event-attendees-list li a {
+  text-decoration: none;
+}
+.event-attendees-list li a:hover {
+  text-decoration: underline;
 }
 
 .footer {

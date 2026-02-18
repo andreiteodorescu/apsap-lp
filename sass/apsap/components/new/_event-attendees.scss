@@ -1,0 +1,13 @@
+.event-attendees-list {
+  margin-bottom: 0;
+
+  li {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

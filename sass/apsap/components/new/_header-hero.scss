@@ -14,7 +14,6 @@
 .hero-event {
   display: flex;
   min-height: 415px;
-  margin-top: -37px;
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;

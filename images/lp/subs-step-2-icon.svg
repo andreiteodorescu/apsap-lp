@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="STAGE-1">
+    <line class="cls-1" x1="5.1" y1=".5" x2="5.03" y2="4.74"/>
+    <line class="cls-1" x1="9.34" y1=".5" x2="9.26" y2="4.74"/>
+    <line class="cls-1" x1="13.57" y1=".5" x2="13.5" y2="4.74"/>
+    <path class="cls-1" d="M13.54,2.62c2.34,0,4.2,1.9,4.16,4.24l-.25,14.41c-.04,2.34-1.97,4.24-4.31,4.24H4.66c-2.34,0-4.2-1.9-4.16-4.24l.25-14.41c.04-2.34,1.97-4.24,4.31-4.24"/>
+    <path class="cls-1" d="M23.31,25.5c-1.33-1.36-2.06-3.2-2.03-5.11l.24-13.74c.02-1.17.99-2.12,2.16-2.12s2.1.95,2.08,2.12l-.24,13.74c-.03,1.92-.83,3.76-2.21,5.11Z"/>
+    <line class="cls-1" x1="25.68" y1="10.88" x2="21.44" y2="10.88"/>
+    <line class="cls-1" x1="4.92" y1="10.88" x2="13.39" y2="10.88"/>
+    <line class="cls-1" x1="4.85" y1="15.12" x2="13.32" y2="15.12"/>
+    <line class="cls-1" x1="4.77" y1="19.36" x2="13.25" y2="19.36"/>
+  </g>
+</svg>
